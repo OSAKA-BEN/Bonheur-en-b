@@ -1,4 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.raleway-font {
+  font-family: 'Raleway', sans-serif;
+}
+
+.custom-text-effect {
+  color: white;
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 

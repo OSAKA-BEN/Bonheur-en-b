@@ -4,7 +4,6 @@ import FAQ from "./FAQ"
 import Footer from "./Footer"
 import Gites from "./Gites"
 import Header from "./Header"
-import Navbar from "./Navbar"
 import Partners from "./Partners"
 import WhereToFind from "./WhereToFind"
 
@@ -12,7 +11,6 @@ function App() {
 
   return (
     <section className="bg-black overflow-hidden">
-      <Navbar />
       <Header />
       <Gites />
       <Activities />
