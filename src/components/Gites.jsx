@@ -1,6 +1,6 @@
 const Gites = () => {
   return (
-  <section className="gites mt-8" style={{ position: 'relative'}}>
+  <section id="gites" className="my-12 z-0" style={{ position: 'relative'}}>
     <div className="absolute z-10 md:bottom-0 right-0 h-96 md:h-full w-full md:w-1/3 lg:w-1/2">
       <div className="flex md:flex-col">
         <img className="md:h-64 w-1/3 md:w-full object-cover" src="src/assets/random2.jpg" alt=""/>
@@ -24,7 +24,7 @@ const Gites = () => {
             </div>
           </div>
           <div className="w-full max-w-md mb-8 text-center">
-            <span className="text-lg font-semibold text-blue-400">Voir ce gîte</span>
+            <span className="text-lg font-semibold text-blue-400 cursor-pointer hover:underline">Voir ce gîte</span>
             <h2 className="mt-6 mb-4 text-2xl text-white uppercase font-heading">Perle de Sel</h2>
             <ul className="text-white">
               <li>8 adultes 3 bébés</li>

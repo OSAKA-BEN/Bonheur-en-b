@@ -1,24 +1,40 @@
+import { useEffect, useState } from "react";
+
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrolled = window.scrollY > 50;
+      setIsScrolled(scrolled);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
+
   return (
-  <section className="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>
+  <section id="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>
   {/* Navbar */}
-    <nav className="relative z-10 flex px-16 justify-between bg-transparent border-b border-white">
+    <nav className={`fixed top-0 z-10 flex px-16 justify-between w-full ${isScrolled ? 'bg-black bg-opacity-80' : 'bg-transparent'} border-b border-white`}>
       <div className="container mx-auto">
         <div className="flex justify-between">
             {/* Section gauche */}
-            <div className="flex-shrink-0 pr-14 py-8 lg:flex items-center ">
-              <a className="inline-block text-xl text-white font-medium font-heading" href="#">
+            <div className="flex-shrink-0 pr-14 lg:flex items-center ">
+              <a className="flex text-xl text-white font-medium font-heading" href="#">
                 <img className="h-8" width="auto" src="boldui-assets/logo/logo-boldui-light.svg" alt=""/>
+                <span className="dancing-font text-4xl">Les bonheur en B</span>
               </a>
             </div>
 
             {/* Section du milieu: Liens (prend tout l'espace restant) */}
             <div className="hidden lg:flex lg:flex-grow justify-center items-center py-8">
               <ul className="flex justify-center text-xl">
-                <li className="mr-12"><a className="text-white hover:text-black hover:underline" href="#">About</a></li>
-                <li className="mr-12"><a className="text-white hover:text-black hover:underline" href="#">Company</a></li>
-                <li className="mr-12"><a className="text-white hover:text-black hover:underline" href="#">Services</a></li>
-                <li className="mr-12"><a className="text-white hover:text-black hover:underline" href="#">Testimonials</a></li>
+                <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">About</a></li>
+                <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">Company</a></li>
+                <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">Services</a></li>
+                <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">Testimonials</a></li>
               </ul>
             </div>
 
@@ -100,11 +116,11 @@ const Header = () => {
     {/* Header section */}
     <div className="container px-4">
       <div className="relative pt-20 pb-40 md:pb-64">
-        <div className="relative max-w-6xl mx-auto lg:mt-12">
-          <h2 className="mb-6 md:mb-0 text-2xl sm:text-5xl md:text-6xl text-white uppercase font-heading raleway-font custom-text-effect">
+        <div className="relative max-w-6xl mx-auto lg:mt-36">
+          <h2 className="mb-6 md:mb-0 text-2xl sm:text-5xl md:text-6xl text-white font-heading raleway-font custom-text-effect">
             <span className="md:text-4xl">Venez profitez de</span>
-            <span className="block md:text-8xl">La Baie de Somme</span>
-            <span className="block text-right mt-32">Gîtes Bonheur en B</span>
+            <span className="block md:text-8xl uppercase">La Baie de Somme</span>
+            <span className="block text-right mt-32 dancing-font">Gîtes Bonheur en B</span>
           </h2>
         </div>
       </div>
