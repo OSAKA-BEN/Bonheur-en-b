@@ -26,7 +26,7 @@ const WhereToFind = () => {
           </div>
         </div>
         <div className="hidden md:block absolute top-0 right-0 md:w-1/2 lg:w-3/5 lg:max-w-4xl h-full border-l">
-          <LoadScript googleMapsApiKey="AIzaSyCls-DLTsIua02kMaVQV_W6BTTC_XT71Hk">
+          <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
               zoom={13}
