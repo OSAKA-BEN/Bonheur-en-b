@@ -292,8 +292,10 @@ const location2 = { lat: 50.186666362562605, lng: 1.5992504723818368};
 
 const WhereToFind = () => {
   return (
-    <section id="contacts" className="relative py-20 md:py-32 bg-black overflow-x-hidden">
-      <div className="container mx-auto px-4">
+    <section id="contacts" className="relative bg-black overflow-x-hidden">
+      <h1 className="text-white text-9xl text-center w-1/2 dancing-font">Localisation</h1>
+
+      <div className="container mx-auto px-4 py-32">
         <div className="w-full md:w-1/2 xl:w-full max-w-sm mb-10 md:mb-0">
           <h2 className="mb-4 text-2xl text-white uppercase font-heading">Nos adresses</h2>
           <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>

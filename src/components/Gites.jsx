@@ -23,6 +23,8 @@ const Gites = () => {
         décoration parle d&#39;elle-même.
       </p>
 
+      <div className="absolute z-[0] w-[60%] h-[60%] right-[50%] rounded-full blue__gradient bottom-40" />
+
       <div className="relative container mx-auto px-4">
         <div className="flex flex-wrap py-12">
           <div className="flex justify-between w-full mb-4">
@@ -44,7 +46,7 @@ const Gites = () => {
               <div className="w-full max-w-md mb-8 text-center">
                 <h2 className="mb-4 text-6xl text-white font-heading dancing-font">{activeGite.name}</h2>
                 <h3 className="mb-4 text-2xl text-white font-heading">{activeGite.subtitle}</h3>
-                <p className="text-white">{activeGite.description}</p>
+                <p className="mb-4 text-white">{activeGite.description}</p>
                 <ul className="text-white">
                   {activeGite.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
