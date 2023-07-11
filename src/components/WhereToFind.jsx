@@ -294,13 +294,12 @@ const WhereToFind = () => {
   return (
     <section id="contacts" className="relative py-20 md:py-32 bg-black overflow-x-hidden">
       <div className="container mx-auto px-4">
-        <div className="w-full md:w-1/2 xl:w-full max-w-xs mb-10 md:mb-0">
+        <div className="w-full md:w-1/2 xl:w-full max-w-sm mb-10 md:mb-0">
           <h2 className="mb-4 text-2xl text-white uppercase font-heading">Nos adresses</h2>
           <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
           <div>
             <h3 className="text-lg text-blue-500">Adresses</h3>
-            <p className="text-lg text-white">1686 Geraldine Lane</p>
-            <p className="mb-6 text-lg text-white">New York, NY 10013</p>
+            <p className="text-lg text-white">1686 Geraldine Lane, New York, NY 10013</p>
           </div>
         </div>
         <div className="hidden md:block absolute top-0 right-0 md:w-1/2 lg:w-3/5 lg:max-w-4xl h-full border-l">

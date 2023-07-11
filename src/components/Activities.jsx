@@ -1,6 +1,6 @@
 const Activities = () => {
   return (
-  <section id="activities" className="z-0">
+  <section id="activities" className="z-0 bg-black">
     <div className="flex flex-wrap">
       <div className="w-full">
         <div className="h-full py-52 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('src/assets/activity1.jpg')" }}>

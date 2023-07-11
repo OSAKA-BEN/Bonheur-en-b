@@ -1,7 +1,6 @@
 const FAQ = () => {
   return (
-  <section id="faq" className="relative pb-20 bg-black overflow-hidden">
-    <img className="absolute top-0 right-0" src="boldui-assets/elements/shadow-light-3.svg" alt=""/>
+  <section id="faq" className="relative z-0 pb-20 bg-black overflow-hidden">
     <div className="container mx-auto px-4 text-center">
       <div className="flex flex-wrap -mx-4 -mb-32">
         <div className="relative w-full md:w-1/2 lg:w-1/3 px-4 mb-32">

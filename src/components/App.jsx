@@ -10,7 +10,7 @@ import WhereToFind from "./WhereToFind"
 function App() {
 
   return (
-    <section className="bg-black overflow-hidden">
+    <>
       <Header />
       <Gites />
       <Activities />
@@ -19,7 +19,7 @@ function App() {
       <Contact />
       <WhereToFind />
       <Footer />
-    </section>
+    </>
   )
 }
 
