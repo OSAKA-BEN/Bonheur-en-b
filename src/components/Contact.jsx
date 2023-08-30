@@ -14,10 +14,11 @@ const Contact = () => {
   const mailtoLink = `mailto:your-email@example.com?subject=Message from ${formData.name}&body=${formData.message}`;
 
   return (
-    <section className="relative py-32 bg-black bg-cover bg-no-repeat" style={{ backgroundImage: "url('src/assets/phoque-baie-de-somme.jpg')" }}>
+    <section className="relative pb-32 bg-black bg-cover bg-no-repeat" style={{ backgroundImage: "url('src/assets/phoque-baie-de-somme.jpg')" }}>
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"></div>
       <div className="relative container mx-auto px-4">
-        <div className="max-w-md">
+      <h1 className="text-white text-9xl text-center dancing-font">Contacts</h1>
+        <div className="max-w-md py-32">
           <h2 className="mb-4 text-2xl text-white uppercase font-heading">Contactez nous</h2>
           <p className="mb-6 text-lg text-gray-400">Contactez nous directement par mail pour plus d&#39;informations et nous vous ferons un retour le plus rapidement posible.</p>
           <form action="" onSubmit={(e) => e.preventDefault()}>

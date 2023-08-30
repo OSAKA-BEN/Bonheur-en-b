@@ -118,9 +118,8 @@ const Header = () => {
       <div className="relative pt-20 pb-40 md:pb-64">
         <div className="relative max-w-6xl mx-auto lg:mt-36">
           <h2 className="mb-6 md:mb-0 text-2xl sm:text-5xl md:text-6xl text-white font-heading raleway-font custom-text-effect">
-            <span className="md:text-4xl">Venez profitez de</span>
+            <span className="md:text-4xl dancing-font">Venez profitez de</span>
             <span className="block md:text-8xl uppercase">La Baie de Somme</span>
-            <span className="block text-right mt-32 dancing-font">Gîtes Bonheur en B</span>
           </h2>
         </div>
       </div>

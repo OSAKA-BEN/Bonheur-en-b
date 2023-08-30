@@ -20,3 +20,11 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.container-gradient {
+  position: relative;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}

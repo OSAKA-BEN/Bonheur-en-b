@@ -1,45 +1,79 @@
 const Footer = () => {
   return (
-<section className="bg-black">
-    <div className="pt-20 pb-8 md:pb-20 border-t border-b border-slate-500">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap items-center justify-between">
-          <a className="inline-block text-xl text-white font-medium font-heading mb-8 lg:mb-0" href="#">
-          <img className="h-8" src="boldui-assets/logo/logo-boldui-light.svg" alt="" width="auto"/>
-          </a>
-          <div className="w-full lg:w-auto">
-          <ul className="flex flex-wrap">
-            <li className="w-full sm:w-auto mb-4 md:mb-0 sm:mr-6 md:mr-16"><a className="text-sm text-white uppercase hover:underline font-heading" href="#">Company</a></li>
-            <li className="w-full sm:w-auto mb-4 md:mb-0 sm:mr-6 md:mr-16"><a className="text-sm text-white uppercase hover:underline font-heading" href="#">Pages</a></li>
-            <li className="w-full sm:w-auto mb-4 md:mb-0 sm:mr-6 md:mr-16"><a className="text-sm text-white uppercase hover:underline font-heading" href="#">Legal</a></li>
-          </ul>
+  <section className="bg-black overflow-x-hidden">
+    <div className="border-t">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap -mx-4 mb-10 md:mb-0">
+          <div className="w-full md:w-2/6 md:border-r md:border-gray-800 px-4">
+            <div className="max-w-xs mx-auto py-20">
+              <a className="inline-block text-xl text-white font-medium font-heading mb-8 md:mb-32" href="#">
+                <img className="h-8" src="boldui-assets/logo/logo-boldui-light.svg" alt="" width="auto"/>
+              </a>
+              <p className="max-w-xs text-white uppercase font-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div className="w-full md:w-4/6 px-4">
+            <div className="md:py-20 px-8 lg:pl-20 lg:pr-10">
+              <div className="flex flex-wrap -mx-4">
+                <div className="w-1/2 md:w-1/4 px-4 mb-12 md:mb-0">
+                  <h3 className="mb-8 text-sm text-white uppercase font-heading">Company</h3>
+                  <ul>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Careers</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Press</a></li>
+                    <li><a className="text-gray-500 hover:text-gray-400" href="#">Blog</a></li>
+                  </ul>
+                </div>
+                <div className="w-1/2 md:w-1/4 px-4 mb-12 md:mb-0">
+                  <h3 className="mb-8 text-sm text-white uppercase font-heading">Pages</h3>
+                  <ul>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Login</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Register</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Add list</a></li>
+                    <li><a className="text-gray-500 hover:text-gray-400" href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div className="w-1/2 md:w-1/4 px-4">
+                  <h3 className="mb-8 text-sm text-white uppercase font-heading">Legal</h3>
+                  <ul>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Terms</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">About Us</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Team</a></li>
+                    <li><a className="text-gray-500 hover:text-gray-400" href="#">Privacy</a></li>
+                  </ul>
+                </div>
+                <div className="w-1/2 md:w-1/4 px-4">
+                  <h3 className="mb-8 text-sm text-white uppercase font-heading">Resources</h3>
+                  <ul>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Blog</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Service</a></li>
+                    <li className="mb-8"><a className="text-gray-500 hover:text-gray-400" href="#">Product</a></li>
+                    <li><a className="text-gray-500 hover:text-gray-400" href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div className="pt-8 md:pt-20 pb-20 border-b">
+    <div className="border-t py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-auto mb-8 md:mb-0">
-            <div className="flex flex-wrap">
-              <a className="mr-8" href="#">
-              <img src="boldui-assets/brands/small-logos/facebook.svg" alt=""/>
-              </a>
-              <a className="mr-8" href="#">
-              <img src="boldui-assets/brands/small-logos/twitter.svg" alt=""/>
-              </a>
-              <a className="mr-8" href="#">
-              <img src="boldui-assets/brands/small-logos/instagram.svg" alt=""/>
-              </a>
-              <a className="mr-8" href="#">
-              <img src="boldui-assets/brands/small-logos/github.svg" alt=""/>
-              </a>
-              <a href="#">
-              <img src="boldui-assets/brands/small-logos/linkedin.svg" alt=""/>
-              </a>
-            </div>
+          <p className="mb-8 md:mb-0 text-gray-500">Tout droits réservés © Les Bonheur en B 2023</p>
+          <div className="flex w-full md:w-auto">
+            <a className="mr-8" href="#">
+              <img src="src/assets/facebook.svg" alt="facebook"/>
+            </a>
+            <a className="mr-8" href="#">
+              <img src="src/assets/twitter.svg" alt="twitter"/>
+            </a>
+            <a className="mr-8" href="#">
+              <img src="src/assets/instagram.svg" alt="instagram"/>
+            </a>
+            <a href="#">
+              <img src="src/assets/linkedin.svg" alt="linkedin"/>
+            </a>
           </div>
-          <p className="text-gray-500">All rights reserved © Les Bonheur en B 2023</p>
         </div>
       </div>
     </div>
