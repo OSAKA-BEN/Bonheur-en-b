@@ -21,8 +21,21 @@ const WhereToFind = () => {
           <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
           <div>
             <h3 className="text-lg text-blue-500">Adresses</h3>
-            <p className="text-lg text-white">1686 Geraldine Lane</p>
-            <p className="mb-6 text-lg text-white">New York, NY 10013</p>
+            <p className="text-lg text-white">13 de Gabrielle</p>
+            <p className="text-lg text-white">13 Rue Jacques Dharcourt</p>
+            <p className="mb-6 text-lg text-white">80550 Le Crotoy</p>
+            <br />
+            <p className="text-lg text-white">Le Clos Normand</p>
+            <p className="text-lg text-white">24 Rue des écoles</p>
+            <p className="mb-6 text-lg text-white">80120 St Quentin en Tourmont</p>
+            <br />
+            <p className="text-lg text-white">Perle de Sel</p>
+            <p className="text-lg text-white">10 Rue Pasteur</p>
+            <p className="mb-6 text-lg text-white">80550 Le Crotoy</p>
+            <br />
+            <p className="text-lg text-white">La Mouette Rieuse et la Grèbe Huppée</p>
+            <p className="text-lg text-white">404 Rue des Mouettes</p>
+            <p className="mb-6 text-lg text-white">80550 Le Crotoy</p>
           </div>
         </div>
         <div className="hidden md:block absolute top-0 right-0 md:w-1/2 lg:w-3/5 lg:max-w-4xl h-full border-l">
