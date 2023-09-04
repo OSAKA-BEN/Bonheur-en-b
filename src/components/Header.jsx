@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -13,6 +14,14 @@ const Header = () => {
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   return (
   <section id="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>
@@ -36,6 +45,9 @@ const Header = () => {
                 <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">Services</a></li>
                 <li className="mr-12"><a className="text-white hover:text-blue-700" href="#">Testimonials</a></li>
               </ul>
+              <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full  hover:bg-gray-600">
+              {darkMode ? <span className="text-white">☀️</span> : <span className="text-white">🌙</span>}
+            </button>
             </div>
 
             {/* Section droite: Bouton Réserver */}

@@ -15,10 +15,10 @@ const Gites = () => {
   const activeGite = gitesData[activeGiteIndex];
 
   return (
-    <section id="gites" className="py-4 z-0 bg-black relative">
-      <h1 className="text-white text-9xl text-center dancing-font">Nos Gîtes</h1>
-      <h2 className="text-white text-4xl text-center dancing-font">Simplement pour vous</h2>
-      <p className="text-white text-center text-lg italic">
+    <section id="gites" className="py-4 z-0 bg-white dark:bg-black relative">
+      <h1 className="text-black dark:text-white text-9xl text-center dancing-font">Nos Gîtes</h1>
+      <h2 className="text-black dark:text-white text-4xl text-center dancing-font">Simplement pour vous</h2>
+      <p className="text-black dark:text-white text-center text-lg italic">
         Que vous voyagiez seul ou en groupe, il existe forcément un gîte pour vous. Ils sont tous équipés du nécessaire et la
         décoration parle d&#39;elle-même.
       </p>
@@ -44,15 +44,15 @@ const Gites = () => {
               <div className="flex justify-between w-full mb-4">
               </div>
               <div className="w-full max-w-md mb-8 text-center">
-                <h2 className="mb-4 text-6xl text-white font-heading dancing-font">{activeGite.name}</h2>
-                <h3 className="mb-4 text-2xl text-white font-heading">{activeGite.subtitle}</h3>
-                <p className="mb-4 text-white">{activeGite.description}</p>
-                <ul className="text-white">
+                <h2 className="mb-4 text-6xl dark:text-white text-black font-heading dancing-font">{activeGite.name}</h2>
+                <h3 className="mb-4 text-2xl dark:text-white text-black font-heading">{activeGite.subtitle}</h3>
+                <p className="mb-4 dark:text-white text-black">{activeGite.description}</p>
+                <ul className="dark:text-white text-black">
                   {activeGite.features.map((feature, index) => (
                     <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <p className="text-white">{activeGite.price}</p>
+                <p className="dark:text-white text-black">{activeGite.price}</p>
               </div>
             </div>
           </div>
