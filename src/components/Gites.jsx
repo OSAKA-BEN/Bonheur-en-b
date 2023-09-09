@@ -23,8 +23,6 @@ const Gites = () => {
         décoration parle d&#39;elle-même.
       </p>
 
-      <div className="absolute z-[0] w-[60%] h-[60%] right-[50%] rounded-full blue__gradient bottom-40" />
-
       <div className="relative container mx-auto px-4">
         <div className="flex flex-wrap py-12">
           <div className="flex justify-between w-full mb-4">
