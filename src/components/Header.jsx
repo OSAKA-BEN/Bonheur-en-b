@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import DarkModeContext from "../DarkModeContext";
 
 const Header = () => {
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -14,14 +15,6 @@ const Header = () => {
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
-
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add('dark');
-    } else {
-      document.body.classList.remove('dark');
-    }
-  }, [darkMode]);
 
   return (
   <section id="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>

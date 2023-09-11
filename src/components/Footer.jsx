@@ -1,19 +1,37 @@
+import { useState } from "react";
+import MentionsLegalesModal from "./MentionsLegalesModal";
+import ConditionsGeneralesModal from "./ConditionsGeneralesModal";
+import ModalitesReservation from "./ModalitesReservationModal";
+import CarteVisiteModal from "./CarteVisiteModal";
+
 const Footer = () => {
+const [isModalOpen, setIsModalOpen] = useState(false);
+const [activeModal, setActiveModal] = useState(null);
+
+const showModal = (modalType) => {
+  setActiveModal(modalType);
+  setIsModalOpen(true);
+};
+
+const closeModal = () => {
+  setIsModalOpen(false);
+};
+
   return (
-    <section className="bg-white dark:bg-black overflow-x-hidden">
+    <section id="footer" className="bg-white dark:bg-black overflow-x-hidden">
       <div className="border-t py-12">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
 
           {/* Première colonne pour les liens */}
           <div className="mb-4 md:mb-0 text-center text-black dark:text-white">
-            <p>Mentions légales</p>
-            <p>Carte de visite</p>
-            <p>Conditions générales de ventes</p>
-            <p>Modalités de réservation</p>
+            <p className="cursor-pointer hover:underline" onClick={() => showModal('mentionsLegales')}>Mentions légales</p>
+            <p className="cursor-pointer hover:underline" onClick={() => showModal('conditionsGenerales')}>Conditions générales de ventes</p>
+            <p className="cursor-pointer hover:underline" onClick={() => showModal('modalitesReservation')}>Modalités de réservation</p>
+            <p className="cursor-pointer hover:underline" onClick={() => showModal('carteVisite')}>Carte de visite</p>
           </div>
 
           {/* Deuxième colonne pour le copyright */}
-          <p className="my-8 text-black dark:text-white">Tout droits réservés © Les Bonheur en B 2023</p>
+          <p className="my-8 text-center text-black dark:text-white">Tout droits réservés © Les Bonheur en B 2023</p>
 
           {/* Troisième colonne pour les icônes de médias sociaux */}
           <div className="flex justify-center items-center w-full md:w-auto mb-8 md:mb-0">
@@ -26,6 +44,16 @@ const Footer = () => {
           </div>
 
         </div>
+      </div>
+      <div>
+        {isModalOpen && (
+          <div>
+            {activeModal === 'mentionsLegales' && <MentionsLegalesModal closeModal={closeModal} />}
+            {activeModal === 'conditionsGenerales' && <ConditionsGeneralesModal closeModal={closeModal} />}
+            {activeModal === 'modalitesReservation' && <ModalitesReservation closeModal={closeModal} />}
+            {activeModal === 'carteVisite' && <CarteVisiteModal closeModal={closeModal} />}
+          </div>
+        )}
       </div>
     </section>
   )
