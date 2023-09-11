@@ -1,6 +1,6 @@
 const Activities = () => {
   return (
-    <section id="activities" className="py-24 bg-black overflow-hidden">
+    <section id="activities" className="py-24 bg-white dark:bg-black overflow-hidden">
     <h1 className="text-white text-9xl text-center dancing-font">Les Activités</h1>
     <div className="container mx-auto px-4">
       <div className="max-w-xl mx-auto text-center">
@@ -59,14 +59,6 @@ const Activities = () => {
             </div>
           </a>
         </div>
-      </div>
-      <div className="relative border-b">
-        <a className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inline-flex w-full md:w-auto items-center justify-center py-4 px-6 rounded-full bg-yellow-300 hover:bg-yellow-400 duration-200" href="#">
-          <svg className="mr-3" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.01 3.16553H0V5.24886H12.01V8.37386L16 4.20719L12.01 0.0405273V3.16553Z" fill="black"></path>
-          </svg>
-          <span className="text-sm font-medium font-heading">Show more</span>
-        </a>
       </div>
     </div>
   </section>

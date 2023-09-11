@@ -13,11 +13,11 @@ function App() {
     <>
       <Header />
       <Gites />
+      <WhereToFind />
+      <Contact />
+      <FAQ />
       <Activities />
       <Partners />
-      <FAQ />
-      <Contact />
-      <WhereToFind />
       <Footer />
     </>
   )

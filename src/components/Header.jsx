@@ -41,10 +41,12 @@ const Header = () => {
             <div className="hidden lg:flex lg:flex-grow justify-center items-center py-8">
               <ul className="flex justify-center text-xl">
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#gites">Gîtes</a></li>
-                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#activities">Activités</a></li>
-                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#faq">FAQ</a></li>
+                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#activities">Qui sommes nous</a></li>
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#contacts">Contacts</a></li>
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#location">Localisation</a></li>
+                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#faq">FAQ</a></li>
+                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#activities">Activités</a></li>
+                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#partners">Partenaires</a></li>
               </ul>
               <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full  hover:bg-gray-600">
               {darkMode ? <span className="text-black dark:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}    stroke="currentColor" className="w-6 h-6">

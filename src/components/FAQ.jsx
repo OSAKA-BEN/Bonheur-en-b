@@ -1,7 +1,7 @@
 const FAQ = () => {
   return (
   <section id="faq" className="relative z-0 pb-20 bg-white dark:bg-black overflow-hidden">
-    <h1 className="text-black dark:text-white text-9xl text-center dancing-font">F.A.Q</h1>
+    <h1 className="pt-8 text-black dark:text-white text-9xl text-center dancing-font">F.A.Q</h1>
 
     <div className="container mx-auto px-4 py-12 text-center">
       <div className="flex flex-wrap -mx-4 -mb-32">

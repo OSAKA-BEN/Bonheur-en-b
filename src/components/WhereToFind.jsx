@@ -295,7 +295,7 @@ const mouetteRieuse = { lat: 50.23908278785516, lng: 1.6170857372585838};
 const WhereToFind = () => {
   return (
     <section id="location" className="relative bg-white dark:bg-black overflow-x-hidden">
-      <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Localisation</h1>
+      <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Pour nous trouver</h1>
 
       <div className="container mx-auto px-4 py-32">
         <div className="w-full md:w-1/2 xl:w-full max-w-sm mb-10 md:mb-0">
