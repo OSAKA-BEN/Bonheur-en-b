@@ -22,7 +22,8 @@ const closeModal = () => {
       <div className="border-t py-12">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
 
-          {/* Première colonne pour les liens */}
+          <p className="text-center text-black dark:text-white text-lg">Tout droits réservés © Les Bonheur en B 2023</p>
+
           <div className="mb-4 md:mb-0 text-center text-black dark:text-white">
             <p className="cursor-pointer hover:underline" onClick={() => showModal('mentionsLegales')}>Mentions légales</p>
             <p className="cursor-pointer hover:underline" onClick={() => showModal('conditionsGenerales')}>Conditions générales de ventes</p>
@@ -30,10 +31,6 @@ const closeModal = () => {
             <p className="cursor-pointer hover:underline" onClick={() => showModal('carteVisite')}>Carte de visite</p>
           </div>
 
-          {/* Deuxième colonne pour le copyright */}
-          <p className="my-8 text-center text-black dark:text-white">Tout droits réservés © Les Bonheur en B 2023</p>
-
-          {/* Troisième colonne pour les icônes de médias sociaux */}
           <div className="flex justify-center items-center w-full md:w-auto mb-8 md:mb-0">
             <a className="mr-8" href="https://www.facebook.com/groups/470717321340382/" target="_blank" rel="noopener noreferrer">
               <img src="src/assets/facebook.svg" alt="facebook" />

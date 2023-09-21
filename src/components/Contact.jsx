@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import DarkModeContext from '../DarkModeContext';
 
 const Contact = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
   const [formData, setFormData] = useState({
     prenom: '',
     nom: '',
@@ -95,12 +98,9 @@ const Contact = () => {
               className="w-full mb-4 py-4 px-6 bg-black rounded-md border text-white outline-none placeholder-gray-500"
             />
             {errors.message && <p className="text-red-500">{errors.message}</p>}
-            <button type="submit" className="inline-flex items-center justify-center py-4 px-6 rounded-full bg-yellow-300 hover:bg-yellow-400 transform duration-200 text-sm font-medium font-heading">
-              <svg className="mr-3" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.01 3.16553H0V5.24886H12.01V8.37386L16 4.20719L12.01 0.0405273V3.16553Z" fill="black"></path>
-              </svg>
-              Envoyer
-            </button>
+            <div className="hidden lg:flex lg:flex-shrink-0 items-center">
+              <button className={`btn btn-outline ${darkMode ? 'text-white bg-black hover:bg-white' : 'text-black bg-white hover:bg-black hover:text-white'}`}>Envoyer</button>
+            </div>
           </form>
         </div>
       </div>
