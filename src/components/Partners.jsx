@@ -1,6 +1,6 @@
 const Partners = () => {
   return (
-    <section id="partners" className="py-20 bg-[#e9e9e9] dark:bg-black">
+    <section id="partners" className="py-20 bg-slate-200 dark:bg-slate-900">
       <h1 className="pt-8 text-black dark:text-white text-9xl text-center dancing-font">Partenaires</h1>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">

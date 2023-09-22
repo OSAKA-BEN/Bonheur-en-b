@@ -326,7 +326,7 @@ const WhereToFind = () => {
   ];
 
   return (
-    <section id="location" className="relative bg-[#e9e9e9] dark:bg-black overflow-x-hidden">
+    <section id="location" className="relative bg-slate-200 dark:bg-slate-900 overflow-x-hidden">
       <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Pour nous trouver</h1>
 
       <div className="container mx-auto px-4 py-16">

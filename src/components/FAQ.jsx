@@ -1,6 +1,6 @@
 const FAQ = () => {
   return (
-  <section id="faq" className="relative z-0 pb-20 bg-[#e9e9e9] dark:bg-black overflow-hidden">
+  <section id="faq" className="relative z-0 pb-20 bg-slate-200 dark:bg-slate-900 overflow-hidden">
     <h1 className="text-black dark:text-white text-9xl text-center dancing-font">F.A.Q</h1>
 
     <div className="container mx-auto px-4 py-12 text-center">

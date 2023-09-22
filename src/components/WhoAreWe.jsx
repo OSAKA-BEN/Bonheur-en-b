@@ -44,7 +44,7 @@ const gites = [
 ];
 
 const GiteCard = ({ gite }) => (
-  <a href={`#gite-${gite.id}`} className="p-4 border border-black dark:border-white rounded shadow transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+  <a href={`#gite-${gite.id}`} className="p-4 backdrop-blur-md bg-[#cbd4e5] bg-opacity-40 border border-opacity-20 rounded shadow-xl transform transition-transform duration-300 hover:scale-105 cursor-pointer">
     <img src={gite.image} alt={gite.name} className="w-full h-48 object-cover mb-4 rounded"/>
     <h2 className="font-bold">{gite.name}</h2>
     <p>{gite.capacity}</p>
@@ -65,7 +65,7 @@ GiteCard.propTypes = {
 };
 
 const WhoAreWe = () => (
-  <section id="whoarewe" className="relative z-0 pb-20 bg-[#e9e9e9] dark:bg-black overflow-hidden">
+  <section id="whoarewe" className="relative z-0 pb-20 bg-slate-200 dark:bg-slate-900 overflow-hidden">
     <h1 className="text-black dark:text-white text-9xl text-center dancing-font">Qui Sommes Nous ?</h1>
     <p className="text-black dark:text-white text-center text-lg italic">Un séjour dont vous vous souviendrez.</p>
     <p className="text-black dark:text-white text-center text-lg italic">Les Bonheurs en B, sont des meublés de tourisme ouverts à l’année.</p>

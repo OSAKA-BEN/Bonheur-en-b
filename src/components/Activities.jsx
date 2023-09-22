@@ -1,6 +1,6 @@
 const Activities = () => {
   return (
-    <section id="activities" className="py-24 bg-white dark:bg-black overflow-hidden">
+    <section id="activities" className="py-24 bg-slate-200 dark:bg-slate-900 overflow-hidden">
     <h1 className="text-white text-9xl text-center dancing-font">Les Activités</h1>
     <div className="container mx-auto px-4">
       <div className="max-w-xl mx-auto text-center">

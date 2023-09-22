@@ -19,7 +19,7 @@ const Header = () => {
   return (
   <section id="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>
   {/* Navbar */}
-    <nav className={`fixed top-0 z-10 flex px-16 justify-between w-full ${isScrolled ? 'bg-white dark:bg-black bg-opacity-80' : 'bg-white bg-opacity-20'} border-b border-black dark:border-white`}>
+    <nav className={`fixed top-0 z-10 flex px-16 justify-between min-h-12 w-full ${isScrolled ? 'bg-white dark:bg-black bg-opacity-80' : 'bg-white bg-opacity-20'}`}>
       <div className="container mx-auto">
         <div className="flex justify-between">
             {/* Section gauche */}
@@ -127,7 +127,7 @@ const Header = () => {
         <div className="relative max-w-6xl mx-auto lg:mt-36">
           <h2 className="mb-6 md:mb-0 text-2xl sm:text-5xl md:text-6xl text-white font-heading raleway-font custom-text-effect">
             <span className="md:text-4xl dancing-font">Venez profitez de</span>
-            <span className="block md:text-8xl uppercase">La Baie de Somme</span>
+            <span className="block md:text-9xl uppercase tracking-widest">La Baie de Somme</span>
           </h2>
         </div>
       </div>

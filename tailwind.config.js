@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gradient-start': '#bae6fd',
+        'gradient-mid': '#2563eb',
+        'gradient-end': '#172554'
+      }
+    }
   },
   plugins: [require('daisyui')],
   daisyui: {
