@@ -1,4 +1,6 @@
 import { DarkModeProvider } from "../DarkModeContext"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import Activities from "./Activities"
 import Contact from "./Contact"
@@ -9,8 +11,15 @@ import Header from "./Header"
 import Partners from "./Partners"
 import WhereToFind from "./WhereToFind"
 import WhoAreWe from "./WhoAreWe"
+import { useEffect } from "react";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      // Vous pouvez également passer des options ici si nécessaire
+    });
+  }, []);
 
   return (
     <DarkModeProvider>

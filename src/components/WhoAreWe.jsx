@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import DarkModeContext from '../DarkModeContext';
 
 const gites = [
   {
@@ -64,16 +66,29 @@ GiteCard.propTypes = {
   }).isRequired
 };
 
-const WhoAreWe = () => (
-  <section id="whoarewe" className="relative z-0 pb-20 bg-slate-200 dark:bg-slate-900 overflow-hidden">
-    <h1 className="text-black dark:text-white text-9xl text-center dancing-font">Qui Sommes Nous ?</h1>
-    <p className="text-black dark:text-white text-center text-lg italic">Un séjour dont vous vous souviendrez.</p>
-    <p className="text-black dark:text-white text-center text-lg italic">Les Bonheurs en B, sont des meublés de tourisme ouverts à l’année.</p>
-    <p className="text-black dark:text-white text-center text-lg italic">Nos gites sont équipés pour accueillir les petits.</p>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 text-black dark:text-white text-center">
-      {gites.map((gite, index) => <GiteCard key={index} gite={gite} />)}
+const WhoAreWe = () => {
+  const { darkMode } = useContext(DarkModeContext);
+
+  return (
+    <section id="whoarewe" className="relative z-0 pb-20 bg-slate-200 dark:bg-slate-900 overflow-hidden">
+    <div className="py-40 flex flex-col gap-10 items-center relative content mx-12">
+      <div className="relative flex items-center justify-center">
+        <p className={`font-bold absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">BonheurenB</p>
+        <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Qui sommes nous ?</h2>
+      </div>
+
+      <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/10 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/10 after:absolute after:left-5"></div>
+
+      <p className="uppercase tracking-wider text-black dark:text-white/80 text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Un séjour dont vous vous souviendrez.</p>
+      <p className="uppercase tracking-wider text-black dark:text-white/80 text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Les Bonheurs en B, sont des meublés de tourisme ouverts à l’année.</p>
+      <p className="uppercase tracking-wider text-black dark:text-white/80 text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Nos gites sont équipés pour accueillir les petits.</p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 text-black dark:text-white text-center">
+        {gites.map((gite, index) => <GiteCard key={index} gite={gite} />)}
+      </div>
     </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default WhoAreWe;

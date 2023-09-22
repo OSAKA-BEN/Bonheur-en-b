@@ -327,35 +327,30 @@ const WhereToFind = () => {
 
   return (
     <section id="location" className="relative bg-slate-200 dark:bg-slate-900 overflow-x-hidden">
-      <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Pour nous trouver</h1>
+      <h1 className="text-black dark:text-white text-9xl text-center dancing-font">Pour nous trouver</h1>
+      <p className="mb-8 text-lg text-gray-500 text-center">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
 
       <div className="container mx-auto px-4 py-16">
-      <div className="w-full md:w-1/2 xl:w-full max-w-lg mb-10 md:mb-0">
-        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
-        <p className="text-lg text-gray-500 text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
-        <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
 
-        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
-        <p className="text-lg text-gray-500 text-center">A 3h de Bruxelles</p>
-        <p className="text-lg text-gray-500 text-center">A 2h30 de Paris Centre</p>
+      <div className="w-full mb-10">
+        <div className="flex items-center justify-center mb-8">
+          {/* Section Train */}
+          <div className="flex flex-col items-center mx-4">
+            <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
+            <p className="text-lg text-gray-500 text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
+            <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
+          </div>
 
-        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Nos adresses</h2>
-        <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
-
-        <div className={`mt-8`} >
-          {addresses.map((address, index) => (
-            <FeatureCard
-              key={index}
-              title={address.title}
-              content={address.content}
-              link={address.link}
-              onHover={() => setActiveMarker(index)}
-            />
-          ))}
+          {/* Section Voiture */}
+          <div className="flex flex-col items-center mx-4">
+            <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
+            <p className="text-lg text-gray-500 text-center">A 3h de Bruxelles</p>
+            <p className="text-lg text-gray-500 text-center">A 2h30 de Paris Centre</p>
+          </div>
         </div>
       </div>
 
-        <div className="hidden md:block absolute top-0 right-0 md:w-1/2 lg:w-3/5 lg:max-w-4xl h-full border-l">
+        <div className="w-full h-[700px]">
           <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
@@ -372,6 +367,17 @@ const WhereToFind = () => {
               {activeMarker === 4 && <Marker position={mouetteRieuse} />}
             </GoogleMap>
           </LoadScript>
+        </div>
+        <div className={`mt-8 flex`} >
+          {addresses.map((address, index) => (
+            <FeatureCard
+              key={index}
+              title={address.title}
+              content={address.content}
+              link={address.link}
+              onHover={() => setActiveMarker(index)}
+            />
+          ))}
         </div>
       </div>
     </section>
