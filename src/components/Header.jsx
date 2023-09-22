@@ -34,7 +34,6 @@ const Header = () => {
             <div className="hidden lg:flex lg:flex-grow justify-center items-center py-8">
               <ul className="flex justify-center text-xl">
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#gites">Gîtes</a></li>
-                <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#activities">Qui sommes nous</a></li>
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#contacts">Contacts</a></li>
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#location">Localisation</a></li>
                 <li className="mr-12"><a className="text-black dark:text-white hover:text-blue-700 dark:hover:text-blue-400" href="#faq">FAQ</a></li>

@@ -8,12 +8,14 @@ import Gites from "./Gites"
 import Header from "./Header"
 import Partners from "./Partners"
 import WhereToFind from "./WhereToFind"
+import WhoAreWe from "./WhoAreWe"
 
 function App() {
 
   return (
     <DarkModeProvider>
       <Header />
+      <WhoAreWe />
       <Gites />
       <WhereToFind />
       <Contact />

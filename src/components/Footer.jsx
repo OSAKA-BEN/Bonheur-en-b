@@ -18,7 +18,7 @@ const closeModal = () => {
 };
 
   return (
-    <section id="footer" className="bg-white dark:bg-black overflow-x-hidden">
+    <section id="footer" className="bg-[#e9e9e9] dark:bg-black overflow-x-hidden">
       <div className="border-t py-12">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
 

@@ -326,14 +326,14 @@ const WhereToFind = () => {
   ];
 
   return (
-    <section id="location" className="relative bg-white dark:bg-black overflow-x-hidden">
+    <section id="location" className="relative bg-[#e9e9e9] dark:bg-black overflow-x-hidden">
       <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Pour nous trouver</h1>
 
       <div className="container mx-auto px-4 py-16">
       <div className="w-full md:w-1/2 xl:w-full max-w-lg mb-10 md:mb-0">
         <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
         <p className="text-lg text-gray-500 text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
-        <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d'Abbeville</p>
+        <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
 
         <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
         <p className="text-lg text-gray-500 text-center">A 3h de Bruxelles</p>
