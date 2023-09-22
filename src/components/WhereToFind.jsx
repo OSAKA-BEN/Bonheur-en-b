@@ -1,4 +1,6 @@
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import FeatureCard from "./FeatureCard";
+import { useState } from "react";
 
 const mapStyles = {
   height: "100%",
@@ -284,7 +286,7 @@ const customMapStyle = [
 ];
 
 const defaultCenter = {
-  lat: 50.20605338864312, lng: 1.6298076545309912
+  lat: 50.25001883425659, lng: 1.612555275691095
 }
 
 const deGabrielle = { lat: 50.220517160744436, lng: 1.6186063767399088};
@@ -293,47 +295,81 @@ const perleDeSel = { lat: 50.21714577949911, lng: 1.6231911256118854};
 const mouetteRieuse = { lat: 50.23908278785516, lng: 1.6170857372585838};
 
 const WhereToFind = () => {
-  return (
-    <section id="location" className="relative bg-[##e9e9e9] dark:bg-black overflow-x-hidden">
-      <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Localisation</h1>
+  const [activeMarker, setActiveMarker] =  useState(null);
 
-      <div className="container mx-auto px-4 py-32">
-        <div className="w-full md:w-1/2 xl:w-full max-w-sm mb-10 md:mb-0">
-          <h2 className="mb-4 text-2xl text-black dark:text-white uppercase font-heading">Nos adresses</h2>
-          <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
-          <div>
-            <h3 className="text-lg text-blue-500">Adresses</h3>
-            <p className="text-lg text-black dark:text-white">13 de Gabrielle</p>
-            <p className="text-lg text-black dark:text-white">13 Rue Jacques Dharcourt</p>
-            <p className="mb-6 text-lg text-black dark:text-white">80550 Le Crotoy</p>
-            <br />
-            <p className="text-lg text-black dark:text-white">Le Clos Normand</p>
-            <p className="text-lg text-black dark:text-white">24 Rue des écoles</p>
-            <p className="mb-6 text-lg text-black dark:text-white">80120 St Quentin en Tourmont</p>
-            <br />
-            <p className="text-lg text-black dark:text-white">Perle de Sel</p>
-            <p className="text-lg text-black dark:text-white">10 Rue Pasteur</p>
-            <p className="mb-6 text-lg text-black dark:text-white">80550 Le Crotoy</p>
-            <br />
-            <p className="text-lg text-black dark:text-white">La Mouette Rieuse et la Grèbe Huppée</p>
-            <p className="text-lg text-black dark:text-white">404 Rue des Mouettes</p>
-            <p className="mb-6 text-lg text-black dark:text-white">80550 Le Crotoy</p>
-          </div>
+  const addresses = [
+    {
+      title: '13 de Gabrielle',
+      content: '13 Rue Jacques Dharcourt, 80550 Le Crotoy',
+      link: 'https://www.google.com/maps?q=13+Rue+Jacques+Dharcourt,80550+Le+Crotoy'
+    },
+    {
+      title: 'Le Clos Normand',
+      content: '24 Rue des écoles, 80120 St Quentin en Tourmont',
+      link: 'https://www.google.com/maps?q=24+Rue+des+écoles,80120+St+Quentin+en+Tourmont'
+    },
+    {
+      title: 'Perle de Sel',
+      content: '10 Rue Pasteur, 80550 Le Crotoy',
+      link: 'https://www.google.com/maps?q=10+Rue+pasteur,80550+Le+Crotoy'
+    },
+    {
+      title: 'La Mouette Rieuse',
+      content: '404 Rue des Mouettes, 80550 Le Crotoy',
+      link: 'https://www.google.com/maps?q=404+Rue+des+Mouettes,80550+Le+Crotoy'
+    },
+    {
+      title: 'La Grèbe Huppée',
+      content: '404 Rue des Mouettes, 80550 Le Crotoy',
+      link: 'https://www.google.com/maps?q=404+Rue+des+Mouettes,80550+Le+Crotoy'
+    },
+  ];
+
+  return (
+    <section id="location" className="relative bg-white dark:bg-black overflow-x-hidden">
+      <h1 className="text-black dark:text-white text-9xl text-center w-1/2 dancing-font">Pour nous trouver</h1>
+
+      <div className="container mx-auto px-4 py-16">
+      <div className="w-full md:w-1/2 xl:w-full max-w-lg mb-10 md:mb-0">
+        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
+        <p className="text-lg text-gray-500 text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
+        <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d'Abbeville</p>
+
+        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
+        <p className="text-lg text-gray-500 text-center">A 3h de Bruxelles</p>
+        <p className="text-lg text-gray-500 text-center">A 2h30 de Paris Centre</p>
+
+        <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Nos adresses</h2>
+        <p className="mb-8 text-lg text-gray-500">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
+
+        <div className={`mt-8`} >
+          {addresses.map((address, index) => (
+            <FeatureCard
+              key={index}
+              title={address.title}
+              content={address.content}
+              link={address.link}
+              onHover={() => setActiveMarker(index)}
+            />
+          ))}
         </div>
+      </div>
+
         <div className="hidden md:block absolute top-0 right-0 md:w-1/2 lg:w-3/5 lg:max-w-4xl h-full border-l">
           <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
-              zoom={14}
+              zoom={13}
               center={defaultCenter}
               options={{
                 styles: customMapStyle,
               }}
             >
-              <Marker position={deGabrielle} />
-              <Marker position={closNormand} />
-              <Marker position={perleDeSel} />
-              <Marker position={mouetteRieuse} />
+              {activeMarker === 0 && <Marker position={deGabrielle} />}
+              {activeMarker === 1 && <Marker position={closNormand} />}
+              {activeMarker === 2 && <Marker position={perleDeSel} />}
+              {activeMarker === 3 && <Marker position={mouetteRieuse} />}
+              {activeMarker === 4 && <Marker position={mouetteRieuse} />}
             </GoogleMap>
           </LoadScript>
         </div>

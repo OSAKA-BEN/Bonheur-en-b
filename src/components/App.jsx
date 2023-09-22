@@ -1,3 +1,5 @@
+import { DarkModeProvider } from "../DarkModeContext"
+
 import Activities from "./Activities"
 import Contact from "./Contact"
 import FAQ from "./FAQ"
@@ -10,16 +12,16 @@ import WhereToFind from "./WhereToFind"
 function App() {
 
   return (
-    <>
+    <DarkModeProvider>
       <Header />
       <Gites />
+      <WhereToFind />
+      <Contact />
+      <FAQ />
       <Activities />
       <Partners />
-      <FAQ />
-      <Contact />
-      <WhereToFind />
       <Footer />
-    </>
+    </DarkModeProvider>
   )
 }
 
