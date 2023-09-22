@@ -17,7 +17,7 @@ const Header = () => {
   }, []);
 
   return (
-  <section id="header" style={{ backgroundImage: `url("src/assets/baie-de-somme-header.jpg")`, backgroundSize: 'cover', height: '100vh' }}>
+  <section id="header" style={{ backgroundImage: `url('src/assets/phoque-baie-de-somme.jpg')`, backgroundSize: 'cover', height: '100vh' }}>
   {/* Navbar */}
     <nav className={`fixed top-0 z-10 flex px-16 justify-between min-h-12 w-full ${isScrolled ? 'bg-white dark:bg-black bg-opacity-80' : 'bg-white bg-opacity-20'}`}>
       <div className="container mx-auto">
