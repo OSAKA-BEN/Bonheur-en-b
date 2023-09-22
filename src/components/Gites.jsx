@@ -15,7 +15,7 @@ const Gites = () => {
   const activeGite = gitesData[activeGiteIndex];
 
   return (
-    <section id="gites" className="py-4 z-0 bg-white dark:bg-black relative">
+    <section id="gites" className="py-4 z-0 bg-[##e9e9e9] dark:bg-black relative">
       <h1 className="text-black dark:text-white text-9xl text-center dancing-font">Nos Gîtes</h1>
       <h2 className="text-black dark:text-white text-4xl text-center dancing-font">Simplement pour vous</h2>
       <p className="text-black dark:text-white text-center text-lg italic">
