@@ -7,7 +7,10 @@ const FAQ = () => {
         <h1 className="text-black dark:text-white text-9xl dancing-font">F.A.Q</h1>
       </div>
 
+      <div className="flex flex-wrap -mx-2"> {/* Conteneur Flex englobant */}
+
       {/* Accessibilité */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -29,12 +32,14 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Heures d'arrivée et de départ */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
-            <h3 className="text-2xl font-semibold text-black dark:text-white">Heures d&#39;arrivée et de départ</h3>
+            <h3 className="text-2xl font-semibold text-black dark:text-white">Heures arrivée/départ</h3>
           </div>
           <p className="mt-3 text-lg text-gray-500 hidden group-hover:block">
             Votre logement est disponible à partir de 16h. Si vous avez de la chance, vous pourrez peut-être même vous enregistrer plus tôt. Le départ doit avoir lieu avant 10h le matin. Si vous désirez prolonger votre séjour et réserver un départ tardif à 13h nous facturons 25 € TTC.
@@ -52,8 +57,10 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Remise des clés */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -74,8 +81,10 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Courses */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -96,8 +105,10 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Dépôt de garantie */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -118,8 +129,10 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Chiens */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -143,8 +156,10 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
       {/* Tabac */}
+      <div className="w-full lg:w-1/2 px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -165,8 +180,34 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
-      {/* Taxe de séjour */}
+      {/* Parking */}
+      <div className="w-full lg:w-1/2 px-2">
+      <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
+        <div className="max-w-xl pr-5">
+          <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
+            <h3 className="text-2xl font-semibold text-black dark:text-white">Parking</h3>
+          </div>
+          <p className="mt-3 text-lg text-gray-500 hidden group-hover:block">
+            Selon le gîte choisi, un parking privé peut vous être proposé.  Il y a cependant de nombreux parking proche des gites. De plus, une carte de stationnement à la journée, facturée 5€ peut etre proposé.
+          </p>
+        </div>
+        <span className="hidden group-hover:block">
+          <svg className="dark:stroke-[#FFEC3E]" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
+            </svg>
+        </span>
+        <span className="block group-hover:hidden">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.4619 7H9.46194V1C9.46194 0.734784 9.35659 0.48043 9.16905 0.292893C8.98151 0.105357 8.72716 0 8.46194 0C8.19673 0 7.94237 0.105357 7.75484 0.292893C7.5673 0.48043 7.46194 0.734784 7.46194 1V7H1.46194C1.19673 7 0.942374 7.10536 0.754838 7.29289C0.567302 7.48043 0.461945 7.73478 0.461945 8C0.461945 8.26522 0.567302 8.51957 0.754838 8.70711C0.942374 8.89464 1.19673 9 1.46194 9H7.46194V15C7.46194 15.2652 7.5673 15.5196 7.75484 15.7071C7.94237 15.8946 8.19673 16 8.46194 16C8.72716 16 8.98151 15.8946 9.16905 15.7071C9.35659 15.5196 9.46194 15.2652 9.46194 15V9H15.4619C15.7272 9 15.9815 8.89464 16.1691 8.70711C16.3566 8.51957 16.4619 8.26522 16.4619 8C16.4619 7.73478 16.3566 7.48043 16.1691 7.29289C15.9815 7.10536 15.7272 7 15.4619 7Z" fill="currentColor"></path>
+          </svg>
+        </span>
+      </button>
+      </div>
+
+            {/* Taxe de séjour */}
+            <div className="w-full px-2">
       <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
         <div className="max-w-xl pr-5">
           <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
@@ -212,32 +253,13 @@ const FAQ = () => {
           </svg>
         </span>
       </button>
+      </div>
 
-      {/* Parking */}
-      <button className="flex mb-8 p-8 group w-full items-center justify-between rounded-3xl border border-black dark:border-white text-left">
-        <div className="max-w-xl pr-5">
-          <div className="flex items-start mb-6"> {/* Conteneur Flex pour l'icône et le titre */}
-            <h3 className="text-2xl font-semibold text-black dark:text-white">Parking</h3>
-          </div>
-          <p className="mt-3 text-lg text-gray-500 hidden group-hover:block">
-            Selon le gîte choisi, un parking privé peut vous être proposé.  Il y a cependant de nombreux parking proche des gites. De plus, une carte de stationnement à la journée, facturée 5€ peut etre proposé.
-          </p>
-        </div>
-        <span className="hidden group-hover:block">
-          <svg className="dark:stroke-[#FFEC3E]" width="48" height="48" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#000">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
-            </svg>
-        </span>
-        <span className="block group-hover:hidden">
-          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.4619 7H9.46194V1C9.46194 0.734784 9.35659 0.48043 9.16905 0.292893C8.98151 0.105357 8.72716 0 8.46194 0C8.19673 0 7.94237 0.105357 7.75484 0.292893C7.5673 0.48043 7.46194 0.734784 7.46194 1V7H1.46194C1.19673 7 0.942374 7.10536 0.754838 7.29289C0.567302 7.48043 0.461945 7.73478 0.461945 8C0.461945 8.26522 0.567302 8.51957 0.754838 8.70711C0.942374 8.89464 1.19673 9 1.46194 9H7.46194V15C7.46194 15.2652 7.5673 15.5196 7.75484 15.7071C7.94237 15.8946 8.19673 16 8.46194 16C8.72716 16 8.98151 15.8946 9.16905 15.7071C9.35659 15.5196 9.46194 15.2652 9.46194 15V9H15.4619C15.7272 9 15.9815 8.89464 16.1691 8.70711C16.3566 8.51957 16.4619 8.26522 16.4619 8C16.4619 7.73478 16.3566 7.48043 16.1691 7.29289C15.9815 7.10536 15.7272 7 15.4619 7Z" fill="currentColor"></path>
-          </svg>
-        </span>
-      </button>
-
+    </div>
     </div>
   </div>
 </section>
+
   )
 }
 
