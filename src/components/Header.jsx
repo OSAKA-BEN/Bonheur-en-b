@@ -62,6 +62,8 @@ const Header = () => {
             </button>
         </div>
       </div>
+
+      <a href="#" className="fixed bottom-5 lg:bottom-10 right-5 lg:right-10 z-40"><button type="button" className="h-8 w-8 p-2 tracking-widest uppercase text-white font-light text-sm rounded-sm cursor-pointer w-fit transition-all bg-pink-500 hover:opacity-75"><svg fill="none" viewBox="0 0 24 24" className="h-full w-full"><path fill="currentColor" d="M17.657 16.243l1.414-1.414-7.07-7.072-7.072 7.072 1.414 1.414L12 10.586l5.657 5.657z"></path></svg></button></a>
     </nav>
 
     <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
