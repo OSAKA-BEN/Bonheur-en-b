@@ -62,7 +62,7 @@ body {
   background-color: #ec4899;
   border-radius: 50%;
   transform: scale(0);
-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
   transform: scale(1);
@@ -76,6 +76,11 @@ transition: 0.3s ease-in-out;
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+.font-stroke-header {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: hsla(0,0%,0%,.7); /* For light mode */
+}
 
 .font-stroke-light {
   color: transparent;

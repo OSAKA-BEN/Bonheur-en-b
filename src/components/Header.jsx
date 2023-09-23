@@ -40,7 +40,7 @@ const Header = () => {
                 <li className="mr-12"><a className="hover:underline" href="#activities">Activités</a></li>
                 <li className="mr-12"><a className="hover:underline" href="#partners">Partenaires</a></li>
               </ul>
-              <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full  hover:bg-gray-600">
+              <button onClick={() => setDarkMode(!darkMode)} className="p-2 rounded-full  hover:bg-pink-500">
                 {darkMode ? <span className={`${isScrolled ? 'text-white' : 'text-black'}`}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}    stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                 </svg>
@@ -53,7 +53,7 @@ const Header = () => {
 
             {/* Section droite: Bouton Réserver */}
             <div className="hidden lg:flex lg:flex-shrink-0 items-center">
-              <button className={`btn btn-outline ${darkMode ? 'text-white bg-slate-900 hover:bg-white' : 'text-black bg-white bg-opacity-20 hover:bg-black hover:text-white'}`}>Réserver</button>
+              <button className={`btn btn-outline ${darkMode ? 'text-white bg-slate-900 hover:bg-pink-500' : 'text-black bg-white bg-opacity-20 hover:bg-pink-500 hover:text-black'}`}>Réserver</button>
             </div>
 
               {/* Bouton du menu burger (affiché uniquement sur les petits écrans) */}
@@ -63,7 +63,6 @@ const Header = () => {
         </div>
       </div>
     </nav>
-
 
     <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
       <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -123,14 +122,7 @@ const Header = () => {
 
     {/* Header section */}
     <div className="container px-4">
-      <div className="relative pt-20 pb-40 md:pb-64">
-        <div className="relative max-w-6xl mx-auto lg:mt-36">
-          <h2 className="mb-6 md:mb-0 text-2xl sm:text-5xl md:text-6xl text-white font-heading raleway-font custom-text-effect">
-            <span className="md:text-4xl dancing-font">Venez profitez de</span>
-            <span className="block md:text-9xl uppercase tracking-widest">La Baie de Somme</span>
-          </h2>
-        </div>
-      </div>
+      <p className="text-white uppercase font-bold font-stroke-header tracking-wider absolute bottom-0 text-[180px] mx-auto z-[0] pointer-events-none" data-aos="fade-up" data-aos-delay="200">La Baie de Somme</p>
     </div>
   </section>
   )

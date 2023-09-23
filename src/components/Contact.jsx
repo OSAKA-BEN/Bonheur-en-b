@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contacts" className="relative bg-fixed bg-slate-200 dark:bg-slate-900 overflow-hidden">
-      <div className="py-40 flex flex-col gap-10 items-center relative content">
+      <div className="py-20 flex flex-col gap-10 items-center relative content">
         <div className="relative flex items-center justify-center">
           <p className={`font-bold absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Contact</p>
           <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Contactez nous</h2>

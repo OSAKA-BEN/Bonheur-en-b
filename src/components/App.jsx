@@ -27,9 +27,9 @@ function App() {
       <WhoAreWe />
       <Gites />
       <WhereToFind />
-      <Contact />
       <FAQ />
       <Activities />
+      <Contact />
       <Partners />
       <Footer />
     </DarkModeProvider>

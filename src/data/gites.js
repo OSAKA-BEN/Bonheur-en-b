@@ -21,7 +21,7 @@ export const gitesData = [
     ],
     price: '180€ (minimum de 2 nuits)',
     rental: 'Location de 3 nuits minimum en juillet et aout.',
-    imageUrl: ['src/assets/perle-de-sel.jpg'],
+    imageUrl: ['src/assets/perle-sel1.jpg', 'src/assets/perle-sel2.jpg', 'src/assets/perle-sel3.jpg', 'src/assets/perle-sel4.jpg', 'src/assets/perle-sel5.jpg'],
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ export const gitesData = [
     ],
     price: '90€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout',
-    imageUrl: ['src/assets/le-clos-normand.jpg'],
+    imageUrl: ['src/assets/clos-normand1.jpg', 'src/assets/clos-normand2.jpg', 'src/assets/clos-normand3.jpg', 'src/assets/clos-normand4.jpg', 'src/assets/clos-normand5.jpg'],
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const gitesData = [
     ],
     price: '80€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout.',
-    imageUrl: ['src/assets/13-de-gabrielle.jpg'],
+    imageUrl: ['src/assets/13-gabrielle1.jpg', 'src/assets/13-gabrielle2.jpg', 'src/assets/13-gabrielle3.jpg', 'src/assets/13-gabrielle4.jpg', 'src/assets/13-gabrielle5.jpg'],
   },
   {
     id: 4,
@@ -85,7 +85,7 @@ export const gitesData = [
     ],
     price: '75€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du vendredi au vendredi en juillet et aout.',
-    imageUrl: ['src/assets/grebe-huppee.jpg'],
+    imageUrl: ['src/assets/grebe-huppee1.jpg', 'src/assets/grebe-huppee2.jpg', 'src/assets/grebe-huppee3.jpg', 'src/assets/grebe-huppee4.jpg', 'src/assets/grebe-huppee5.jpg'],
   },
   {
     id: 5,
@@ -107,6 +107,6 @@ export const gitesData = [
     ],
     price: '85€ (minimum de 2 nuits)',
     rental: 'LLocation à la semaine du vendredi au vendredi en juillet et aout.',
-    imageUrl: ['src/assets/mouette-rieuse.jpg'],
+    imageUrl: ['src/assets/mouette-rieuse1.jpg', 'src/assets/mouette-rieuse2.jpg', 'src/assets/mouette-rieuse3.jpg', 'src/assets/mouette-rieuse4.jpg', 'src/assets/mouette-rieuse5.jpg'],
   },
 ];
