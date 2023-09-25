@@ -15,6 +15,7 @@ export const gitesData = [
     price: '180€ (minimum de 2 nuits)',
     rental: 'Location de 3 nuits minimum en juillet et aout.',
     imageUrl: ['src/assets/perle-sel1.jpg', 'src/assets/perle-sel2.jpg', 'src/assets/perle-sel3.jpg', 'src/assets/perle-sel4.jpg', 'src/assets/perle-sel5.jpg'],
+    airBnbUrl: 'https://www.airbnb.fr/rooms/41968856?source_impression_id=p3_1695606865_waIzLc8E6Qwgq52a',
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ export const gitesData = [
     price: '90€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout',
     imageUrl: ['src/assets/clos-normand1.jpg', 'src/assets/clos-normand2.jpg', 'src/assets/clos-normand3.jpg', 'src/assets/clos-normand4.jpg', 'src/assets/clos-normand5.jpg'],
+    airBnbUrl: 'https://www.airbnb.fr/rooms/26598723?source_impression_id=p3_1695611709_%2BOc2dfB%2FCL%2FfxZDL',
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ export const gitesData = [
     price: '80€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout.',
     imageUrl: ['src/assets/13-gabrielle1.jpg', 'src/assets/13-gabrielle2.jpg', 'src/assets/13-gabrielle3.jpg', 'src/assets/13-gabrielle4.jpg', 'src/assets/13-gabrielle5.jpg'],
+    airBnbUrl: 'https://www.airbnb.fr/rooms/26477517?source_impression_id=p3_1695611729_l7O2KPRafXe0VZTa',
   },
   {
     id: 4,
@@ -65,7 +68,8 @@ export const gitesData = [
     icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png', 'src/assets/air-conditioning.png'],
     price: '75€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du vendredi au vendredi en juillet et aout.',
-    imageUrl: ['src/assets/grebe-huppee1.jpg', 'src/assets/grebe-huppee2.jpg', 'src/assets/grebe-huppee3.jpg', 'src/assets/grebe-huppee4.jpg', 'src/assets/grebe-huppee5.jpg'],
+    imageUrl: ['src/assets/grebe-huppee1.jpg', 'src/assets/grebe-huppee2.jpg', 'src/assets/grebe-huppee4.jpg','src/assets/grebe-huppee3.jpg', 'src/assets/grebe-huppee5.jpg'],
+    airBnbUrl: 'https://www.airbnb.fr/rooms/41949614?source_impression_id=p3_1695611757_ieAzhwcT7vnJczJn',
   },
   {
     id: 5,
@@ -83,5 +87,6 @@ export const gitesData = [
     price: '85€ (minimum de 2 nuits)',
     rental: 'LLocation à la semaine du vendredi au vendredi en juillet et aout.',
     imageUrl: ['src/assets/mouette-rieuse2.jpg', 'src/assets/mouette-rieuse3.jpg','src/assets/mouette-rieuse1.jpg', 'src/assets/mouette-rieuse4.jpg', 'src/assets/mouette-rieuse5.jpg'],
+    airBnbUrl: 'https://www.airbnb.fr/rooms/41947438?source_impression_id=p3_1695612041_GYphKLMV9e18Su3p',
   },
 ];

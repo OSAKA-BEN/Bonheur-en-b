@@ -25,12 +25,6 @@ const Gites = () => {
                 <div className="w-full max-w-4xl mx-auto mb-8 text-center">
                   <h2 className={`mb-4 text-8xl ${darkMode ? '' : 'text-black'} font-heading dancing-font`}>{gite.name}</h2>
                   <h3 className={`mb-4 text-4xl ${darkMode ? '' : 'text-black'} font-heading`}>{gite.subtitle}</h3>
-                  <p className={`mb-4 text-xl ${darkMode ? '' : 'text-black'}`}>{gite.description}</p>
-                  <ul className={`flex justify-center gap-4 text-xl mb-4 ${darkMode ? '' : 'text-black'}`}>
-                    {gite.caracteristics.map((feature, idx) => (
-                      <li className="border border-[#242422] rounded-xl p-4" key={idx}>{feature}</li>
-                    ))}
-                  </ul>
                   <ul className={`flex justify-center gap-4 text-xl mb-4 ${darkMode ? '' : 'text-black'}`}>
                     {gite.icons.map((icon, idx) => (
                       <li key={idx}>
@@ -38,7 +32,14 @@ const Gites = () => {
                       </li>
                     ))}
                   </ul>
-                  <p className={`text-2xl font-bold ${darkMode ? '' : 'text-black'}`}>{gite.price}</p>
+                  <p className={`mb-4 text-xl ${darkMode ? '' : 'text-black'}`}>{gite.description}</p>
+                  <ul className={`flex justify-center gap-4 text-xl mb-4 ${darkMode ? '' : 'text-black'}`}>
+                    {gite.caracteristics.map((feature, idx) => (
+                      <li className="border border-[#242422] rounded-xl p-4" key={idx}>{feature}</li>
+                    ))}
+                  </ul>
+                  <a href={gite.airBnbUrl} target="_blank" rel="noopener noreferrer" className="border border-[#EFE7D2] rounded text-xl px-4 py-2 hover:bg-[#EFE7D2] hover:text-black">Réserver</a>
+                  <p className={`text-2xl mt-4 font-bold ${darkMode ? '' : 'text-black'}`}>{gite.price}</p>
                 </div>
                 <div className="w-full flex flex-wrap">
                   {gite.imageUrl.map((image, imgIndex) => (

@@ -6,7 +6,7 @@ const DarkModeContext = createContext();
 export default DarkModeContext;
 
 export const DarkModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {

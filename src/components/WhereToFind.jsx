@@ -339,19 +339,19 @@ const WhereToFind = () => {
 
       <p className="uppercase tracking-wider text-center text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
 
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4">
       <div className="w-full mb-10">
         <div className="flex items-center justify-evenly mb-8">
           {/* Section Train */}
           <div className="flex flex-col items-center mx-4">
-            <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
+            <img className="p-4 filter invert w-20 h-20" src="src/assets/train.png" alt="icone de train" />
             <p className="text-lg text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
             <p className="text-lg text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
           </div>
 
           {/* Section Voiture */}
           <div className="flex flex-col items-center mx-4">
-            <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
+          <img className="p-4 filter invert w-20 h-20" src="src/assets/car.png" alt="icone de voiture" />
             <p className="text-lg text-center">A 3h de Bruxelles</p>
             <p className="text-lg text-center">A 2h30 de Paris Centre</p>
           </div>
