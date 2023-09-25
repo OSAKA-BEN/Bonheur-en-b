@@ -31,6 +31,13 @@ const Gites = () => {
                       <li className="border border-[#242422] rounded-xl p-4" key={idx}>{feature}</li>
                     ))}
                   </ul>
+                  <ul className={`flex justify-center gap-4 text-xl mb-4 ${darkMode ? '' : 'text-black'}`}>
+                    {gite.icons.map((icon, idx) => (
+                      <li key={idx}>
+                        <img className="p-4 filter invert w-20 h-20" src={icon} alt={`Icone pour ${gite.name}`} />
+                      </li>
+                    ))}
+                  </ul>
                   <p className={`text-2xl font-bold ${darkMode ? '' : 'text-black'}`}>{gite.price}</p>
                 </div>
                 <div className="w-full flex flex-wrap">
