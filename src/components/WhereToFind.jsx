@@ -328,32 +328,32 @@ const WhereToFind = () => {
   ];
 
   return (
-    <section id="location" className="relative bg-slate-200 dark:bg-slate-900 overflow-x-hidden">
+    <section id="location" className="relative bg-slate-200 dark:bg-[#0c0d0c] overflow-x-hidden">
     <div className="py-20 flex flex-col gap-10 items-center relative content mx-12">
       <div className="relative flex items-center justify-center">
-        <p className={`font-bold absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Localisation</p>
+        <p className={`font-bold poppins-font absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Localisation</p>
         <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Où nous trouver ?</h2>
       </div>
 
       <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/10 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/10 after:absolute after:left-5"></div>
 
-      <p className="uppercase tracking-wider text-center text-black dark:text-white/80 text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
+      <p className="uppercase tracking-wider text-center text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
 
       <div className="container mx-auto px-4 py-16">
       <div className="w-full mb-10">
-        <div className="flex items-center justify-center mb-8">
+        <div className="flex items-center justify-evenly mb-8">
           {/* Section Train */}
           <div className="flex flex-col items-center mx-4">
             <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Train</h2>
-            <p className="text-lg text-gray-500 text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
-            <p className="text-lg text-gray-500 text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
+            <p className="text-lg text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
+            <p className="text-lg text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
           </div>
 
           {/* Section Voiture */}
           <div className="flex flex-col items-center mx-4">
             <h2 className="text-center xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-white">Voiture</h2>
-            <p className="text-lg text-gray-500 text-center">A 3h de Bruxelles</p>
-            <p className="text-lg text-gray-500 text-center">A 2h30 de Paris Centre</p>
+            <p className="text-lg text-center">A 3h de Bruxelles</p>
+            <p className="text-lg text-center">A 2h30 de Paris Centre</p>
           </div>
         </div>
       </div>
@@ -362,7 +362,7 @@ const WhereToFind = () => {
           <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
-              zoom={13}
+              zoom={13} 
               center={defaultCenter}
               options={{
                 styles: customMapStyle,

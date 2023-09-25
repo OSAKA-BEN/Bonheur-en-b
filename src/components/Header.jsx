@@ -19,7 +19,7 @@ const Header = () => {
   return (
   <section id="header" style={{ backgroundImage: `url('src/assets/phoque-baie-de-somme.jpg')`, backgroundSize: 'cover', height: '100vh' }}>
   {/* Navbar */}
-    <nav className={`fixed top-0 z-10 flex px-16 justify-between min-h-12 w-full ${isScrolled ? 'bg-white dark:bg-slate-900 bg-opacity-40' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 z-10 flex px-16 justify-between min-h-12 w-full ${isScrolled ? 'bg-white dark:bg-[#0c0d0c] dark:bg-opacity-70' : 'bg-transparent'}`}>
       <div className="container mx-auto">
         <div className="flex justify-between">
             {/* Section gauche */}
@@ -32,7 +32,7 @@ const Header = () => {
 
             {/* Section du milieu: Liens (prend tout l'espace restant) */}
             <div className="hidden lg:flex lg:flex-grow justify-center items-center py-8">
-              <ul className={`flex justify-center text-xl ${darkMode && isScrolled ? 'text-white' : 'text-black'}`}>
+              <ul className={`flex justify-center text-2xl ${darkMode && isScrolled ? 'text-white' : 'text-black'}`}>
                 <li className="mr-12"><a className="hover:underline" href="#gites">Gîtes</a></li>
                 <li className="mr-12"><a className="hover:underline" href="#contacts">Contacts</a></li>
                 <li className="mr-12"><a className="hover:underline" href="#location">Localisation</a></li>
@@ -53,7 +53,7 @@ const Header = () => {
 
             {/* Section droite: Bouton Réserver */}
             <div className="hidden lg:flex lg:flex-shrink-0 items-center">
-              <button className={`btn btn-outline ${darkMode ? 'text-white bg-slate-900 hover:bg-pink-500' : 'text-black bg-white bg-opacity-20 hover:bg-pink-500 hover:text-black'}`}>Réserver</button>
+              <button className={`text-2xl rounded-lg p-2 ${darkMode && isScrolled ? 'border text-white hover:bg-pink-500 hover:text-white hover:border-black' : 'text-black border border-black hover:bg-black hover:text-white'}`}>Réserver</button>
             </div>
 
               {/* Bouton du menu burger (affiché uniquement sur les petits écrans) */}
@@ -63,7 +63,7 @@ const Header = () => {
         </div>
       </div>
 
-      <a href="#" className="fixed bottom-5 lg:bottom-10 right-5 lg:right-10 z-40"><button type="button" className="h-8 w-8 p-2 tracking-widest uppercase text-white font-light text-sm rounded-sm cursor-pointer w-fit transition-all bg-pink-500 hover:opacity-75"><svg fill="none" viewBox="0 0 24 24" className="h-full w-full"><path fill="currentColor" d="M17.657 16.243l1.414-1.414-7.07-7.072-7.072 7.072 1.414 1.414L12 10.586l5.657 5.657z"></path></svg></button></a>
+      <a href="#" className="fixed bottom-5 lg:bottom-10 right-5 lg:right-10 z-40"><button type="button" className="h-8 w-8 p-2 tracking-widest uppercase text-white font-light text-sm rounded-sm cursor-pointer transition-all bg-pink-500 hover:opacity-75"><svg fill="none" viewBox="0 0 24 24" className="h-full w-full"><path fill="currentColor" d="M17.657 16.243l1.414-1.414-7.07-7.072-7.072 7.072 1.414 1.414L12 10.586l5.657 5.657z"></path></svg></button></a>
     </nav>
 
     <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-5/6 max-w-sm z-50">
@@ -123,8 +123,9 @@ const Header = () => {
     </div>
 
     {/* Header section */}
-    <div className="container px-4">
-      <p className="text-white uppercase font-bold font-stroke-header tracking-wider absolute bottom-0 text-[180px] mx-auto z-[0] pointer-events-none" data-aos="fade-up" data-aos-delay="200">La Baie de Somme</p>
+    <div className="px-4 flex flex-col items-start justify-end h-[1000px]">  {/* Ajustez h-[400px] selon la hauteur souhaitée */}
+        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider text-[90px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">Venez découvrir</p>
+        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider text-[180px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">La Baie de Somme</p>
     </div>
   </section>
   )

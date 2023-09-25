@@ -2,12 +2,12 @@ import PropTypes from 'prop-types';
 
 const FeatureCard = ({ title, content, link, onHover }) => (
   <a href={link} target="_blank" rel="noreferrer" className="block" onMouseEnter={onHover}>
-    <div className="flex flex-row p-6 rounded-[20px] feature-card hover:bg-white hover:text-white cursor-pointer">
+    <div className="flex flex-row p-6 rounded-[20px] feature-card hover:border-1 hover:border-white cursor-pointer text-center border border-[#242422] mx-4">
       <div className="flex-1 flex flex-col ml-3">
-        <h4 className=" dark:text-white text-black text-2xl leading-[23.4px] mb-1">
+        <h4 className="text-2xl mb-1 font-bold">
           {title}
         </h4>
-        <span className="text-gray-500">
+        <span className="">
           {content}
         </span>
       </div>
