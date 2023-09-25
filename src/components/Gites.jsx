@@ -16,7 +16,7 @@ const Gites = () => {
 
         <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/30 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/30 after:absolute after:left-5"></div>
 
-        <p className={`uppercase tracking-wider text-center mx-32 ${darkMode ? '' : 'text-black'} lg:text-2xl`} data-aos="fade-up" data-aos-delay="400">Que vous voyagiez seul ou en groupe, il existe forcément un gîte pour vous. Ils sont tous équipés du nécessaire et la décoration parle d&#39;elle-même.</p>
+        <p className={`uppercase tracking-wider text-center mx-32 lg:text-2xl ${darkMode ? '' : 'text-black'} `} data-aos="fade-up" data-aos-delay="400">Que vous voyagiez seul ou en groupe, il existe forcément un gîte pour vous. Ils sont tous équipés du nécessaire et la décoration parle d&#39;elle-même.</p>
 
         <div className="relative">
           {gitesData.map((gite, index) => (
@@ -24,7 +24,7 @@ const Gites = () => {
               <div className="mx-auto">
                 <div className="w-full max-w-4xl mx-auto mb-8 text-center">
                   <h2 className={`mb-4 text-8xl ${darkMode ? '' : 'text-black'} font-heading dancing-font`}>{gite.name}</h2>
-                  <h3 className={`mb-4 text-4xl ${darkMode ? '' : 'text-black'} font-heading`}>{gite.subtitle}</h3>
+                  <h3 className={`uppercase tracking-wider mb-4 lg:text-2xl ${darkMode ? '' : 'text-black'} font-heading`}>{gite.subtitle}</h3>
                   <ul className={`flex justify-center gap-4 text-xl mb-4 ${darkMode ? '' : 'text-black'}`}>
                     {gite.icons.map((icon, idx) => (
                       <li key={idx}>
