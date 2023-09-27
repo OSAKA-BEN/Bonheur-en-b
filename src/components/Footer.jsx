@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import ConditionsGeneralesModal from "./ConditionsGeneralesModal";
 import ModalitesReservation from "./ModalitesReservationModal";
 import mentionsLegalesPDF from "../assets/mentions-legales.pdf";
-import carteVisitePDF from "../assets/carte-de-visite.pdf";
 import DarkModeContext from "../DarkModeContext";
 
 const Footer = () => {
@@ -44,7 +43,6 @@ return (
           <p><a href={mentionsLegalesPDF} target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:underline">Mentions Légales</a></p>
           <p className="cursor-pointer hover:underline" onClick={() => showModal('conditionsGenerales')}>Conditions générales de ventes</p>
           <p className="cursor-pointer hover:underline" onClick={() => showModal('modalitesReservation')}>Modalités de réservation</p>
-          <p><a href={carteVisitePDF} target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:underline">Carte de visite</a></p>
         </div>
 
       </div>
