@@ -112,4 +112,12 @@ export const activitiesData = [
     location: 'SAINT-QUENTIN-EN-TOURMONT',
     imageUrl: 'https://picardie.media.tourinsoft.eu/upload/-Espace-Equestre-Henson--4-.JPG?width=1040&height=736&crop=1'
   },
+  {
+    id: 15,
+    title: 'LA BAIE – LES GAUFRES',
+    category: 'Restauration',
+    description: "Le camion de gaufres, rendez-vous incontournable des gourmands de la Baie depuis 1960, vous attend à Saint Valery sur Somme à l’heure du goûter, devant la gare du petit train. Événements privés sur demande.",
+    location: 'Saint Valery sur Somme',
+    imageUrl: 'https://www.tourisme-baiedesomme.fr/wp-content/uploads/wpetourisme/gaufres3.jpg'
+  },
 ];

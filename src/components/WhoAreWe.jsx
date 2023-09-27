@@ -38,29 +38,29 @@ const WhoAreWe = () => {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <section id="whoarewe" className="relative z-0 pb-20 bg-slate-200 dark:bg-[#0c0d0c] overflow-hidden">
-    <div className="pt-40 flex flex-col gap-10 items-center relative content mx-12">
+    <section id="whoarewe" className="relative z-0 bg-slate-200 dark:bg-[#0c0d0c] overflow-hidden">
+    <div className="py-20 md:py-40 flex flex-col gap-10 items-center relative content mx-4">
       <div className="relative flex items-center justify-center">
-        <p className={`font-bold poppins-font absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">BonheurenB</p>
-        <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Qui sommes nous ?</h2>
+        <p className={`font-bold poppins-font absolute text-[60px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">BonheurenB</p>
+        <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Qui sommes nous ?</h2>
       </div>
 
       <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/30 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/30 after:absolute after:left-5"></div>
 
-      <div className="text-center">
-        <p className="uppercase tracking-wide text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
+      <div className="text-center mx-12">
+        <p className="uppercase tracking-wide lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
             Un séjour dont vous vous souviendrez.
         </p>
-        <p className="uppercase tracking-wider text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
+        <p className="uppercase tracking-wider lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
             Les Bonheurs en B, sont des meublés de tourisme ouverts à l’année.
         </p>
-        <p className="uppercase tracking-wider text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
+        <p className="uppercase tracking-wider lg:text-2xl" data-aos="fade-up" data-aos-delay="400">
             Nos gites sont équipés pour accueillir les petits.
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-start justify-between w-full h-[800px]">
-        <div className="w-3/4 h-full rounded-2xl overflow-hidden mb-4">
+      <div className="flex flex-col lg:flex-row items-start justify-between w-full">
+        <div className="w-full lg:w-3/4 mb-4 lg:mb-0 relative z-10 h-[300px] lg:h-[800px] rounded-2xl overflow-hidden">
           <iframe 
               className="w-full h-full"
               src="https://www.youtube.com/embed/gzxQWHmRC-k?si=od4QJu_q5l073Hf7&amp;clip=UgkxSrdD0kVdzuCJaMzFOeCNkdUA0P9nb07K&amp;clipt=EPfzARjr2QI" 
@@ -70,7 +70,7 @@ const WhoAreWe = () => {
           ></iframe>
         </div>
 
-        <div className="w-full lg:w-1/4 flex flex-col md:flex-col gap-4 h-full pl-4 overflow-y-auto">
+        <div className="w-full lg:w-1/4 flex flex-col gap-4 mt-4 lg:mt-0 lg:pl-4 lg:overflow-y-auto lg:h-[800px]">
           {gitesImg.map((gite) => (
             <div key={gite.id} className="relative flex-grow flex flex-col mb-2 items-center justify-center">
               <img 

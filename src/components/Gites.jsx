@@ -8,7 +8,7 @@ const Gites = () => {
   return (
     <section id="gites" className={`py-4 z-0 relative ${darkMode ? 'bg-[#0c0d0c] ' : 'bg-slate-200'}`}>
 
-      <div className="py-20 flex flex-col gap-10 items-center relative content">
+      <div className="py-20 flex flex-col gap-10 items-center relative content mx-12">
         <div className="relative flex items-center justify-center">
           <p className={`font-bold poppins-font absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Gîtes</p>
           <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Simplement pour vous</h2>
@@ -16,7 +16,7 @@ const Gites = () => {
 
         <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/30 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/30 after:absolute after:left-5"></div>
 
-        <p className={`uppercase tracking-wider text-center mx-32 lg:text-2xl ${darkMode ? '' : 'text-black'} `} data-aos="fade-up" data-aos-delay="400">Que vous voyagiez seul ou en groupe, il existe forcément un gîte pour vous. Ils sont tous équipés du nécessaire et la décoration parle d&#39;elle-même.</p>
+        <p className={`uppercase tracking-wider text-center lg:text-2xl ${darkMode ? '' : 'text-black'} `} data-aos="fade-up" data-aos-delay="400">Que vous voyagiez seul ou en groupe, il existe forcément un gîte pour vous. Ils sont tous équipés du nécessaire et la décoration parle d&#39;elle-même.</p>
 
         <div className="relative">
           {gitesData.map((gite, index) => (
