@@ -78,7 +78,7 @@ const WhoAreWe = () => {
                   src={gite.imageUrl} 
                   alt={gite.name} 
               />
-              <p className="absolute uppercase text-xl bottom-0 right-0 pr-2 bg-[#0c0d0c] px-4 py-2 rounded-tl-xl">
+              <div className="absolute uppercase text-xl bottom-0 right-0 pr-2 bg-[#0c0d0c] px-4 py-2 rounded-tl-xl">
                 {gite.name}
                 <div className="social-icon text-center">
                   <a className={darkMode ? "border border-[#EFE7D2]" : "text-black border border-black"} href={`#gite-${gite.id}`}>
@@ -87,8 +87,7 @@ const WhoAreWe = () => {
                     </svg>
                   </a>
                 </div>
-              </p>
-              
+              </div> 
           </div>
           ))}
         </div>
