@@ -34,8 +34,7 @@ const Activities = () => {
 
   return (
     <section id="activities" className={`py-4 z-0 relative ${darkMode ? 'bg-[#0c0d0c] ' : 'bg-slate-200'}`}>
-
-    <div className="py-40 flex flex-col gap-10 items-center relative mx-4">
+    <div className="py-20 flex flex-col gap-10 items-center relative mx-4">
       <div className="relative flex items-center justify-center">
         <p className={`font-bold poppins-font absolute text-[80px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Activités</p>
         <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Ressourcez-vous</h2>
@@ -57,9 +56,9 @@ const Activities = () => {
         ))}
       </div>
 
-      <div className="flex flex-wrap w-full h-[600px]">
+      <div className="flex flex-wrap w-full">
         <div className="w-full lg:w-3/4 px-4 mb-12 lg:mb-0">
-          <div className="block group w-full h-[450px]">
+          <div className="block group w-full">
             <img className="block w-full h-full object-cover mb-5 rounded-lg" src={mainActivity.imageUrl} alt={mainActivity.title}/>
             <span className="inline-block mb-2 border-2 border-[#242422] bg-pink-500 rounded-lg px-2">{mainActivity.category}</span>
             <h4 className="text-3xl text-white font-semibold group-hover:text-orange-900 mb-5">
@@ -69,10 +68,10 @@ const Activities = () => {
           </div>
         </div>
 
-        <div className="w-full h-full lg:w-1/4 px-4 overflow-y-auto">
+        <div className="w-full h-screen lg:w-1/4 px-4 overflow-y-auto">
           {filteredActivities.filter(activity => activity !== mainActivity).map((activity, index) => (
-            <div key={index} className="flex group mb-8 cursor-pointer" onClick={() => setMainActivity(activity)}>
-              <img className="w-48 h-48 rounded-lg" src={activity.imageUrl} alt={activity.title}/>
+            <div key={index} className="flex flex-col md:flex-row group mb-8 cursor-pointer" onClick={() => setMainActivity(activity)}>
+              <img className="w-full md:w-48 h-48 rounded-lg mb-4 md:mb-0" src={activity.imageUrl} alt={activity.title}/>
               <div className="mt-4 md:mt-0 md:ml-6 pt-2">
                 <span className="inline-block mb-2 border-2 border-[#242422] bg-pink-500 rounded-lg px-2">{activity.category}</span>
                 <h4 className="uppercase text-xl text-white font-semibold group-hover:text-orange-900">{activity.title}</h4>
