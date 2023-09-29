@@ -19,7 +19,7 @@ const Header = () => {
   return (
   <section id="header" style={{ backgroundImage: `url('src/assets/phoque-baie-de-somme.jpg')`, backgroundSize: 'cover', height: '100vh' }}>
   {/* Navbar */}
-    <nav className={`fixed top-0 z-10 flex px-8 min-h-12 w-full ${isScrolled ? 'bg-white dark:bg-[#0c0d0c] dark:bg-opacity-70' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 z-10 flex px-8 min-h-16 w-full ${isScrolled ? 'bg-white dark:bg-[#0c0d0c] dark:bg-opacity-70' : 'bg-transparent'}`}>
       <div className="container mx-auto">
         <div className="flex justify-between">
             {/* Section gauche */}
@@ -120,8 +120,8 @@ const Header = () => {
 
     {/* Header section */}
     <div className="px-4 flex flex-col items-start justify-end h-[1000px]">  {/* Ajustez h-[400px] selon la hauteur souhaitée */}
-        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider text-[90px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">Venez découvrir</p>
-        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider text-[180px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">La Baie de Somme</p>
+        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider lg:text-[90px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">Venez découvrir</p>
+        <p className="poppins-font uppercase font-bold font-stroke-header tracking-wider lg:text-[180px] mx-auto pointer-events-none" data-aos="fade-up" data-aos-delay="200">La Baie de Somme</p>
     </div>
   </section>
   )

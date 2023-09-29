@@ -35,15 +35,15 @@ const Activities = () => {
   return (
     <section id="activities" className={`py-4 z-0 relative ${darkMode ? 'bg-[#0c0d0c] ' : 'bg-slate-200'}`}>
 
-    <div className="py-40 flex flex-col gap-10 items-center relative mx-12">
+    <div className="py-40 flex flex-col gap-10 items-center relative mx-4">
       <div className="relative flex items-center justify-center">
-        <p className={`font-bold poppins-font absolute text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Activités</p>
-        <h2 className={`dancing-font text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Ressourcez-vous</h2>
+        <p className={`font-bold poppins-font absolute text-[80px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">Activités</p>
+        <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Ressourcez-vous</h2>
       </div>
 
-      <div className="h-2 w-2 mb-6 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-white/30 before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-white/30 after:absolute after:left-5"></div>
+      <div className="h-2 w-2 mb-6 mx-auto bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[150px] sm:before:w-[250px] lg:before:w-[300px] before:h-[1px] before:bg-white/30 before:absolute before:right-5 after:content-[''] after:w-[150px] sm:after:w-[250px] lg:after:w-[300px] after:h-[1px] after:bg-white/30 after:absolute after:left-5"></div>
 
-      <p className={`uppercase tracking-wider text-center mx-32 ${darkMode ? '' : 'text-black'} lg:text-2xl`} data-aos="fade-up" data-aos-delay="400">Profitez des paysages magnifiques et des nombreuses activités à proximité.</p>
+      <p className={`uppercase tracking-wider text-center ${darkMode ? '' : 'text-black'} lg:text-2xl`} data-aos="fade-up" data-aos-delay="400">Profitez des paysages magnifiques et des nombreuses activités à proximité.</p>
 
       <div className="flex flex-wrap justify-center gap-4">
         {categoryList.map(category => (

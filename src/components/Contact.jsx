@@ -44,7 +44,7 @@ const Contact = () => {
           <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] text-black`} data-aos="fade-up" data-aos-delay="300">Contactez nous</h2>
         </div>
 
-        <div className="h-2 w-2 bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[300px] before:h-[1px] before:bg-black before:absolute before:right-5 after:content-[''] after:w-[300px] after:h-[1px] after:bg-black after:absolute after:left-5"></div>
+        <div className="h-2 w-2 mb-6 mx-auto bg-pink-500 rounded-sm relative flex items-center before:content-[''] before:w-[150px] sm:before:w-[250px] lg:before:w-[300px] before:h-[1px] before:bg-black before:absolute before:right-5 after:content-[''] after:w-[150px] sm:after:w-[250px] lg:after:w-[300px] after:h-[1px] after:bg-black after:absolute after:left-5"></div>
 
           <form className="py-5 w-full lg:max-w-screen-lg flex flex-col items-center gap-10" onSubmit={handleSubmit}>
             <div className="grid lg:grid-cols-2 gap-10 w-full px-4">
