@@ -12,9 +12,9 @@ body {
   overscroll-behavior: none;
 }
 
-/* * {
+* {
   border: 1px solid red !important;
-} */
+}
 
 .poppins-font {
   font-family: 'Poppins', sans-serif;
@@ -42,7 +42,6 @@ body {
 
 .social-icon {
   display: inline-block;
-  margin-left: 14px;
 }
 .social-icon a {
   width: 42px;
