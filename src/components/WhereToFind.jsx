@@ -339,9 +339,9 @@ const WhereToFind = () => {
 
       <p className="uppercase tracking-wider text-center text-sm lg:text-2xl" data-aos="fade-up" data-aos-delay="400">Venez découvrir la Baie de Somme à travers nos différents gîtes.</p>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
       <div className="w-full mb-10">
-        <div className="flex items-center justify-evenly mb-8">
+        <div className="flex flex-col lg:flex-row items-center justify-evenly mb-8">
           {/* Section Train */}
           <div className="flex flex-col items-center mx-4">
             <img className="p-4 filter invert w-20 h-20" src="src/assets/train.png" alt="icone de train" />
@@ -358,7 +358,7 @@ const WhereToFind = () => {
         </div>
       </div>
 
-        <div className="w-full h-[700px]">
+        <div className="w-full h-[400px] lg:h-[700px]">
           <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
             <GoogleMap
               mapContainerStyle={mapStyles}
@@ -376,7 +376,7 @@ const WhereToFind = () => {
             </GoogleMap>
           </LoadScript>
         </div>
-        <div className={`mt-8 flex`} >
+        <div className={`flex flex-col lg:flex-row`} >
           {addresses.map((address, index) => (
             <FeatureCard
               key={index}
