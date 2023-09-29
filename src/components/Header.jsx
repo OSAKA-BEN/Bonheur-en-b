@@ -28,7 +28,6 @@ const Header = () => {
             {/* Section gauche */}
             <div className="flex-shrink-0 pr-14 lg:flex items-center ">
               <a className={`font-medium font-heading flex text-xl ${darkMode && isScrolled ? 'text-white' : 'text-black'}`} href="#">
-                <img className="h-8" width="auto" src="boldui-assets/logo/logo-boldui-light.svg" alt=""/>
                 <span className="dancing-font text-4xl">Les bonheur en B</span>
               </a>
             </div>
