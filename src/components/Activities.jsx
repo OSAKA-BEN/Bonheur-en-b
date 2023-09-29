@@ -25,7 +25,7 @@ const Activities = () => {
     return activitiesData[randomIndex];
   };
 
-  const truncateDescription = (description, length = 100) => {
+  const truncateDescription = (description, length = 50) => {
     if (description.length <= length) return description;
     return description.slice(0, length) + '...';
 }
@@ -75,7 +75,7 @@ const Activities = () => {
               <div className="mt-4 md:mt-0 md:ml-6 pt-2">
                 <span className="inline-block mb-2 border-2 border-[#242422] bg-pink-500 rounded-lg px-2">{activity.category}</span>
                 <h4 className="uppercase text-xl text-white font-semibold group-hover:text-orange-900">{activity.title}</h4>
-                <p className="text-justify">{truncateDescription(activity.description)}</p>
+                <p>{truncateDescription(activity.description)}</p>
               </div>
             </div>
           ))}
