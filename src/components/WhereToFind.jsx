@@ -2,6 +2,8 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import FeatureCard from "./FeatureCard";
 import { useContext, useState } from "react";
 import DarkModeContext from "../DarkModeContext";
+import logoTrain from '../assets/train.png';
+import logoCar from '../assets/car.png';
 
 const mapStyles = {
   height: "100%",
@@ -344,14 +346,14 @@ const WhereToFind = () => {
         <div className="flex flex-col lg:flex-row items-center justify-evenly mb-8">
           {/* Section Train */}
           <div className="flex flex-col items-center mx-4">
-            <img className="p-4 filter invert w-20 h-20" src="src/assets/train.png" alt="icone de train" />
+            <img className="p-4 filter invert w-20 h-20" src={logoTrain} alt="icone de train" />
             <p className="text-lg text-center">Entre 12 et 20 minutes de la gare de Noyelles Sur Mer</p>
             <p className="text-lg text-center">Entre 26 et 30 minutes de la gare d&#39;Abbeville</p>
           </div>
 
           {/* Section Voiture */}
           <div className="flex flex-col items-center mx-4">
-          <img className="p-4 filter invert w-20 h-20" src="src/assets/car.png" alt="icone de voiture" />
+          <img className="p-4 filter invert w-20 h-20" src={logoCar} alt="icone de voiture" />
             <p className="text-lg text-center">A 3h de Bruxelles</p>
             <p className="text-lg text-center">A 2h30 de Paris Centre</p>
           </div>

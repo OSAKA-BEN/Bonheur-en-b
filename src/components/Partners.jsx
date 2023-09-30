@@ -1,5 +1,9 @@
 import { useContext } from "react";
 import DarkModeContext from "../DarkModeContext";
+import airbnb from '../assets/airbnb.png';
+import binance from '../assets/binance.png';
+import coinbase from '../assets/coinbase.png';
+import dropbox from '../assets/dropbox.png';
 
 const Partners = () => {
   const { darkMode } = useContext(DarkModeContext);
@@ -15,10 +19,10 @@ const Partners = () => {
 
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap -mx-4">
-            {["airbnb", "binance", "coinbase", "dropbox"].map((partner, index) => (
+            {[airbnb, binance, coinbase, dropbox].map((partner, index) => (
               <div key={index} className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-4 sm:mb-0">
                 <div className="h-32 w-full flex items-center justify-center">
-                  <img className="h-2/3 w-2/3 object-contain" src={`src/assets/${partner}.png`} alt={partner}/>
+                  <img className="h-2/3 w-2/3 object-contain" src={partner} alt={partner}/>
                 </div>
               </div>
             ))}
