@@ -1,3 +1,35 @@
+import perleSel1 from '../assets/perle-sel1.jpg';
+import perleSel2 from '../assets/perle-sel2.jpg';
+import perleSel3 from '../assets/perle-sel3.jpg';
+import perleSel4 from '../assets/perle-sel4.jpg';
+import perleSel5 from '../assets/perle-sel5.jpg';
+import closNormand1 from '../assets/clos-normand1.jpg';
+import closNormand2 from '../assets/clos-normand2.jpg';
+import closNormand3 from '../assets/clos-normand3.jpg';
+import closNormand4 from '../assets/clos-normand4.jpg';
+import closNormand5 from '../assets/clos-normand5.jpg';
+import gabrielle1 from '../assets/13-gabrielle1.jpg';
+import gabrielle2 from '../assets/13-gabrielle2.jpg';
+import gabrielle3 from '../assets/13-gabrielle3.jpg';
+import gabrielle4 from '../assets/13-gabrielle4.jpg';
+import gabrielle5 from '../assets/13-gabrielle5.jpg';
+import grebeHuppee1 from '../assets/grebe-huppee1.jpg';
+import grebeHuppee2 from '../assets/grebe-huppee2.jpg';
+import grebeHuppee3 from '../assets/grebe-huppee3.jpg';
+import grebeHuppee4 from '../assets/grebe-huppee4.jpg';
+import grebeHuppee5 from '../assets/grebe-huppee5.jpg';
+import mouetteRieuse1 from '../assets/mouette-rieuse1.jpg';
+import mouetteRieuse2 from '../assets/mouette-rieuse2.jpg';
+import mouetteRieuse3 from '../assets/mouette-rieuse3.jpg';
+import mouetteRieuse4 from '../assets/mouette-rieuse4.jpg';
+import mouetteRieuse5 from '../assets/mouette-rieuse5.jpg';
+import terrace from '../assets/terrace.png';
+import tv from '../assets/tv.png';
+import drying from '../assets/drying.png';
+import dishwasher from '../assets/dishwasher.png';
+import wifi from '../assets/terrace.png';
+import airConditioning from '../assets/air-conditioning.png'
+
 export const gitesData = [
   {
     id: 1,
@@ -11,10 +43,10 @@ export const gitesData = [
       '2 Salles de bain',
       '2-3 Nuits minimum',
     ],
-    icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png', 'src/assets/wifi.png'],
+    icons: [terrace, tv, drying, dishwasher, wifi],
     price: '180€ (minimum de 2 nuits)',
     rental: 'Location de 3 nuits minimum en juillet et aout.',
-    imageUrl: ['src/assets/perle-sel1.jpg', 'src/assets/perle-sel2.jpg', 'src/assets/perle-sel3.jpg', 'src/assets/perle-sel4.jpg', 'src/assets/perle-sel5.jpg'],
+    imageUrl: [perleSel1, perleSel2, perleSel3, perleSel4, perleSel5],
     airBnbUrl: 'https://www.airbnb.fr/rooms/41968856?source_impression_id=p3_1695606865_waIzLc8E6Qwgq52a',
   },
   {
@@ -29,10 +61,10 @@ export const gitesData = [
       '1 Salle de bain',
       '2 Nuits minimum',
     ],
-    icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png'],
+    icons: [terrace, tv, drying, dishwasher],
     price: '90€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout',
-    imageUrl: ['src/assets/clos-normand1.jpg', 'src/assets/clos-normand2.jpg', 'src/assets/clos-normand3.jpg', 'src/assets/clos-normand4.jpg', 'src/assets/clos-normand5.jpg'],
+    imageUrl: [closNormand1, closNormand2, closNormand3, closNormand4, closNormand5],
     airBnbUrl: 'https://www.airbnb.fr/rooms/26598723?source_impression_id=p3_1695611709_%2BOc2dfB%2FCL%2FfxZDL',
   },
   {
@@ -47,10 +79,10 @@ export const gitesData = [
       '1 Salle de bain',
       '2 Nuits minimum',
     ],
-    icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png', 'src/assets/wifi.png'],
+    icons: [terrace, tv, drying, dishwasher, wifi],
     price: '80€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du samedi au samedi en juillet et aout.',
-    imageUrl: ['src/assets/13-gabrielle1.jpg', 'src/assets/13-gabrielle2.jpg', 'src/assets/13-gabrielle3.jpg', 'src/assets/13-gabrielle4.jpg', 'src/assets/13-gabrielle5.jpg'],
+    imageUrl: [gabrielle1, gabrielle2, gabrielle3, gabrielle4, gabrielle5],
     airBnbUrl: 'https://www.airbnb.fr/rooms/26477517?source_impression_id=p3_1695611729_l7O2KPRafXe0VZTa',
   },
   {
@@ -65,10 +97,10 @@ export const gitesData = [
       '1 Salle de bain',
       '1-7 Nuits minimum',
     ],
-    icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png', 'src/assets/air-conditioning.png'],
+    icons: [terrace, tv, drying, dishwasher, airConditioning],
     price: '75€ (minimum de 2 nuits)',
     rental: 'Location à la semaine du vendredi au vendredi en juillet et aout.',
-    imageUrl: ['src/assets/grebe-huppee1.jpg', 'src/assets/grebe-huppee2.jpg', 'src/assets/grebe-huppee4.jpg','src/assets/grebe-huppee3.jpg', 'src/assets/grebe-huppee5.jpg'],
+    imageUrl: [grebeHuppee1, grebeHuppee2, grebeHuppee4,grebeHuppee3, grebeHuppee5],
     airBnbUrl: 'https://www.airbnb.fr/rooms/41949614?source_impression_id=p3_1695611757_ieAzhwcT7vnJczJn',
   },
   {
@@ -83,10 +115,10 @@ export const gitesData = [
       '1 Salle de bain',
       '1-7 Nuits minimum',
     ],
-    icons: ['src/assets/terrace.png', 'src/assets/tv.png', 'src/assets/drying.png', 'src/assets/dishwasher.png', 'src/assets/air-conditioning.png'],
+    icons: [terrace, tv, drying, dishwasher, airConditioning],
     price: '85€ (minimum de 2 nuits)',
     rental: 'LLocation à la semaine du vendredi au vendredi en juillet et aout.',
-    imageUrl: ['src/assets/mouette-rieuse2.jpg', 'src/assets/mouette-rieuse3.jpg','src/assets/mouette-rieuse1.jpg', 'src/assets/mouette-rieuse4.jpg', 'src/assets/mouette-rieuse5.jpg'],
+    imageUrl: [mouetteRieuse2, mouetteRieuse3, mouetteRieuse1, mouetteRieuse4, mouetteRieuse5],
     airBnbUrl: 'https://www.airbnb.fr/rooms/41947438?source_impression_id=p3_1695612041_GYphKLMV9e18Su3p',
   },
 ];

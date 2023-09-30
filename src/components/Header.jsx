@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import DarkModeContext from "../DarkModeContext";
+import phoqueImage from '../assets/phoque-baie-de-somme.jpg';
 
 const Header = () => {
   // eslint-disable-next-line no-unused-vars
@@ -20,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-  <section id="header" style={{ backgroundImage: `url('src/assets/phoque-baie-de-somme.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+  <section id="header" style={{ backgroundImage: `url(${phoqueImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
   {/* Navbar */}
     <nav className={`fixed top-0 z-10 flex px-8 min-h-16 w-full ${isScrolled ? 'bg-white dark:bg-[#0c0d0c] dark:bg-opacity-70' : 'bg-transparent'}`}>
       <div className="container mx-auto flex items-center">
@@ -64,6 +65,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+      <a href="#" className="fixed bottom-5 lg:bottom-10 right-5 lg:right-10 z-40"><button type="button" className="h-8 w-8 p-2 tracking-widest uppercase text-white font-light text-sm rounded-sm cursor-pointer transition-all bg-pink-500 hover:opacity-75"><svg fill="none" viewBox="0 0 24 24" className="h-full w-full"><path fill="currentColor" d="M17.657 16.243l1.414-1.414-7.07-7.072-7.072 7.072 1.414 1.414L12 10.586l5.657 5.657z"></path></svg></button></a>
     </nav>
 
     {/* Header section */}
