@@ -8,7 +8,7 @@ const FAQ = () => {
   const [openFAQ, setOpenFAQ] = useState(null);
 
   return (
-  <section id="faq" className="relative z-0 overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed" style={{ backgroundImage: `url(${backgroundImgFaq})` }}>  
+  <section id="faq" className="relative z-0 overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed" style={{ backgroundImage: `url(${backgroundImgFaq})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>  
   <div className="py-20 md:py-40 flex flex-col gap-10 items-center relative content mx-4">
       <div className="relative flex items-center justify-center">
         <p className={`font-bold poppins-font absolute text-[120px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">FAQ</p>
