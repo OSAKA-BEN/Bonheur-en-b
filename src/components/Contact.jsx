@@ -38,11 +38,12 @@ const Contact = () => {
     }
   };
 
+  
   return (
     <section id="contacts" className="min-h-screen relative bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style={{ backgroundImage: `url(${backgroundImgContact})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
       <div className="py-20 md:py-40 flex flex-col gap-10 items-center relative content">
         <div className="relative flex items-center justify-center">
-          <p className={`font-bold poppins-font absolute text-[90px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none font-stroke-light`} data-aos="fade-up" data-aos-delay="200">Contact</p>
+          <p className={`font-bold poppins-font absolute text-[90px] md:text-[160px] lg:text-[180px] xl:text-[250px] mx-auto z-[0] pointer-events-none font-stroke-light`} data-aos="fade-up" data-aos-delay="200">Contact</p>
           <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] text-black`} data-aos="fade-up" data-aos-delay="300">Contactez nous</h2>
         </div>
 

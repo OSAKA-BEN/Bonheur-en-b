@@ -11,7 +11,7 @@ const FAQ = () => {
   <section id="faq" className="relative z-0 overflow-hidden bg-no-repeat bg-center bg-cover bg-fixed" style={{ backgroundImage: `url(${backgroundImgFaq})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>  
   <div className="py-20 md:py-40 flex flex-col gap-10 items-center relative content mx-4">
       <div className="relative flex items-center justify-center">
-        <p className={`font-bold poppins-font absolute text-[120px] md:text-[180px] lg:text-[280px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">FAQ</p>
+        <p className={`font-bold poppins-font absolute text-[120px] md:text-[180px] lg:text-[200px] xl:text-[250px] mx-auto z-[0] pointer-events-none ${darkMode ? 'font-stroke-dark' : 'font-stroke-light'}`} data-aos="fade-up" data-aos-delay="200">FAQ</p>
         <h2 className={`dancing-font text-2xl md:text-6xl font-bold z-[1] ${darkMode ? 'text-white' : 'text-black'}`} data-aos="fade-up" data-aos-delay="300">Nous répondons à vos questions</h2>
       </div>
 
