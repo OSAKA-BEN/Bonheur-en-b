@@ -12,9 +12,9 @@ body {
   overscroll-behavior: none;
 }
 
-/* * {
+* {
   border: 1px solid red !important;
-} */
+} 
 
 .poppins-font {
   font-family: 'Poppins', sans-serif;
