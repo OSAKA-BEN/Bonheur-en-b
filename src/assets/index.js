@@ -1,4 +1,8 @@
 export { default as perleSel1 } from './perle-sel1.jpg';
+export { default as perleSel2 } from './perle-sel2.jpg';
+export { default as perleSel3 } from './perle-sel3.jpg';
+export { default as perleSel4 } from './perle-sel4.jpg';
+export { default as perleSel5 } from './perle-sel5.jpg';
 export { default as closNormand1 } from './clos-normand1.jpg';
 export { default as closNormand2 } from './clos-normand2.jpg';
 export { default as closNormand3 } from './clos-normand3.jpg';
