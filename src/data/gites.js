@@ -1,34 +1,35 @@
-import perleSel1 from '../assets/perle-sel1.jpg';
-import perleSel2 from '../assets/perle-sel2.jpg';
-import perleSel3 from '../assets/perle-sel3.jpg';
-import perleSel4 from '../assets/perle-sel4.jpg';
-import perleSel5 from '../assets/perle-sel5.jpg';
-import closNormand1 from '../assets/clos-normand1.jpg';
-import closNormand2 from '../assets/clos-normand2.jpg';
-import closNormand3 from '../assets/clos-normand3.jpg';
-import closNormand4 from '../assets/clos-normand4.jpg';
-import closNormand5 from '../assets/clos-normand5.jpg';
-import gabrielle1 from '../assets/13-gabrielle1.jpg';
-import gabrielle2 from '../assets/13-gabrielle2.jpg';
-import gabrielle3 from '../assets/13-gabrielle3.jpg';
-import gabrielle4 from '../assets/13-gabrielle4.jpg';
-import gabrielle5 from '../assets/13-gabrielle5.jpg';
-import grebeHuppee1 from '../assets/grebe-huppee1.jpg';
-import grebeHuppee2 from '../assets/grebe-huppee2.jpg';
-import grebeHuppee3 from '../assets/grebe-huppee3.jpg';
-import grebeHuppee4 from '../assets/grebe-huppee4.jpg';
-import grebeHuppee5 from '../assets/grebe-huppee5.jpg';
-import mouetteRieuse1 from '../assets/mouette-rieuse1.jpg';
-import mouetteRieuse2 from '../assets/mouette-rieuse2.jpg';
-import mouetteRieuse3 from '../assets/mouette-rieuse3.jpg';
-import mouetteRieuse4 from '../assets/mouette-rieuse4.jpg';
-import mouetteRieuse5 from '../assets/mouette-rieuse5.jpg';
-import terrace from '../assets/terrace.png';
-import tv from '../assets/tv.png';
-import drying from '../assets/drying.png';
-import dishwasher from '../assets/dishwasher.png';
-import wifi from '../assets/terrace.png';
-import airConditioning from '../assets/air-conditioning.png'
+import { 
+  perleSel1,
+  perleSel2,
+  perleSel3,
+  perleSel4,
+  perleSel5,
+  closNormand1,
+  closNormand2,
+  closNormand3,
+  closNormand4,
+  closNormand5,
+  gabrielle1,
+  gabrielle2,
+  gabrielle3,
+  gabrielle4,
+  gabrielle5,
+  grebeHuppee1,
+  grebeHuppee2,
+  grebeHuppee3,
+  grebeHuppee4,
+  grebeHuppee5,
+  mouetteRieuse1,
+  mouetteRieuse2,
+  mouetteRieuse3,
+  mouetteRieuse4,
+  mouetteRieuse5,
+  terrace,
+  tv,
+  drying,
+  dishwasher,
+  wifi,
+  airConditioning } from '../assets';
 
 export const gitesData = [
   {
