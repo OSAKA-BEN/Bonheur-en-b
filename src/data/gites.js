@@ -1,9 +1,5 @@
 import { 
   perleSel1,
-  perleSel2,
-  perleSel3,
-  perleSel4,
-  perleSel5,
   closNormand1,
   closNormand2,
   closNormand3,
@@ -47,7 +43,7 @@ export const gitesData = [
     icons: [terrace, tv, drying, dishwasher, wifi],
     price: '180€ (minimum de 2 nuits)',
     rental: 'Location de 3 nuits minimum en juillet et aout.',
-    imageUrl: [perleSel1, perleSel2, perleSel3, perleSel4, perleSel5],
+    imageUrl: [perleSel1,],
     airBnbUrl: 'https://www.airbnb.fr/rooms/41968856?source_impression_id=p3_1695606865_waIzLc8E6Qwgq52a',
   },
   {
